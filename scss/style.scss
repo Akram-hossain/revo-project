@@ -1,0 +1,185 @@
+@forward './base/index';
+@use './util/index' as m;
+@use './util/variabls' as v;
+@use './util/media-query' as q;
+
+// variable 
+$secondary: v.$secondary;
+$primary: v.$primary;
+$dark: v.$dark;
+$light: v.$light;
+$heading: v.$heading;
+$txt: v.$txt;
+$blu: v.$blu;
+$bbg: v.$bbg;
+$bga: v.$bga;
+$border: v.$border;
+$inputbg: v.$inputbg;
+$iconclr: v.$iconclr;
+$bxs: v.$bxs;
+$grn: v.$grn;
+$fcfc: v.$fcfc;
+
+// regular css @s
+.main-page-wrapper{
+    width: 100%;
+    display: block;
+    background-color: $light;
+}
+.common-button{
+    @include m.button(1rem,$light,$primary);
+    padding: 1.2rem 2rem;
+    min-width: 280px;
+    text-align: center;
+    &:hover{
+        background-color: $secondary;
+        color: $light;
+    }
+}
+.chat-list-box {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    a {
+         width: 3.5rem;
+         height: 3.5rem;
+         background: $blu;
+         border-radius: 5rem;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0.6rem;
+         transition:  all linear .2s;
+         &:hover{
+            background-color: $primary;
+         }
+    }
+}
+
+// secondary dashboard
+.secondary-dashboard-wrap{
+    .page-body-wrap-2{
+        padding-left: 60px; 
+    }
+}
+
+// modal index css
+.modal {
+    z-index: 9999!important;
+}
+
+// common checkbox @s
+
+.check-form-box{ 
+    padding: .8rem 0.9rem; 
+    background: #FCFCFC;
+    border: 1px solid $inputbg;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    .media{
+        align-items: center;
+        .media-body{
+            margin-left: 1rem;
+        }
+    }
+    h6 {
+        @include m.para(0.95rem, 400, #6E7191); 
+    }
+    p {
+        @include m.para(0.95rem, 500, $dark); 
+    }
+
+    span { 
+        @include m.para(0.813rem, 400, #6E7191);  
+        line-height: 100%;
+    }
+
+    .form-check {   
+        .form-check-input {
+            width: 1.5rem;
+            display: inline-block;
+            height: 1.5rem;
+            border-radius: 50%; 
+            background-color: $border;
+            border: 0;
+        }
+
+        .form-check-input:checked {
+            background-color: #007099;
+            border-color: #007099;
+        }
+    }
+}
+
+.check-form-box-transparent{ 
+     margin-top: 1rem;
+    .media{
+        align-items: center;
+        .media-body{
+            margin-left: 1rem;
+        }
+    }
+    h6 {
+        @include m.para(0.95rem, 400, #6E7191); 
+    }
+    p {
+        @include m.para(0.95rem, 500, $dark); 
+    }
+
+    span { 
+        @include m.para(0.813rem, 400, #6E7191);  
+    }
+
+    .form-check {   
+        .form-check-input {
+            width: 1.5rem;
+            display: inline-block;
+            height: 1.5rem;
+            border-radius: 50%; 
+            background-color: $border;
+            border: 0;
+        }
+
+        .form-check-input:checked {
+            background-color: #007099;
+            border-color: #007099;
+        }
+    }
+}
+// common checkbox @e
+
+
+// regular css @e
+
+
+
+
+// ======= responsive css @s
+// small phone device
+@include q.responsive(phone){
+    .common-button{
+        @include m.button(0.8rem,$light,$primary);
+        padding: 1rem 1rem;
+        min-width: 100%!important;  
+    }
+    .secondary-dashboard-wrap .page-body-wrap-2 {
+        padding-left: 0rem;
+    }
+}
+
+// landscape phone device 
+@include q.responsive(landphone){
+    .secondary-dashboard-wrap .page-body-wrap-2 {
+        padding-left: 0rem;
+    }
+}
+
+// tablet device 
+@include q.responsive(tablet){
+    .secondary-dashboard-wrap .page-body-wrap-2 {
+        padding-left: 0rem;
+    }
+}
+
+// ======= responsive css @e
