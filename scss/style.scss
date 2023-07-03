@@ -37,6 +37,19 @@ $base3: v.$base3;
         color: $light;
     }
 }
+
+.common-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+        @include m.para(2.4rem, 500, v.$primary);
+    }
+}
+
+.common-para {
+    @include m.para(1rem, 400, v.$primary);
+}
 // regular css @e
 
 
@@ -48,6 +61,7 @@ $base3: v.$base3;
     top: 0;
     left: 0;
     width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
     .navbar-nav .nav-item .nav-link {
         @include m.para(1rem, 700, v.$base2);
         margin-right: 1rem; 
@@ -59,6 +73,40 @@ $base3: v.$base3;
 }
 
 /* header css end */
+
+// hero css @s
+.hero-section{
+    margin-top: 5.15rem;
+}
+
+/* hero css start */
+.hero-section {
+    background-color: $base1; 
+    @include m.bgi('../images/hero-bg.jpg');
+}
+
+.hero-txt-wrap {
+    padding: 5rem 0;
+    text-align: end;
+
+    h5 {
+        @include m.para(1.5rem, 700, v.$light); 
+    }
+    h3 {
+        @include m.para(2.7rem, 600, v.$light); 
+    }
+    h1 {
+        @include m.para(3.7rem, 700, v.$light); 
+    } 
+
+    .hero-bttn{
+        margin-top: 2rem;
+        i{
+            margin-left: 3rem;
+        }
+    }
+}
+
 
 // ======= responsive css @s
 // small phone device
