@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Noto+Sans:wght@300;400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -95,7 +95,7 @@ p {
 
 body {
   background-color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -103,173 +103,61 @@ body {
   width: 100%;
   display: block;
   background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-.common-button {
+.default-bttn {
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 110%;
-  background: #262A53;
+  background: #055394;
   display: inline-block;
-  letter-spacing: 1px;
-  padding: 1.3rem 3.7rem;
-  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
   transition: all linear 0.3s;
-  padding: 1.2rem 2rem;
-  min-width: 280px;
-  text-align: center;
+  border: 1px solid #055394;
 }
-.common-button:hover {
-  background-color: #323232;
+.default-bttn:hover {
+  background-color: #ffffff;
+  color: #055394;
+}
+
+.secondary-bttn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #055394;
+  line-height: 110%;
+  background: #ffffff;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all linear 0.3s;
+  border: 1px solid #055394;
+}
+.secondary-bttn:hover {
+  background-color: #055394;
   color: #ffffff;
 }
 
-.chat-list-box {
+/* header css start */
+.header-section {
+  padding-top: 1rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1607843137);
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-.chat-list-box a {
-  width: 3.5rem;
-  height: 3.5rem;
-  background: #1CC1FF;
-  border-radius: 5rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.6rem;
-  transition: all linear 0.2s;
+.header-section .navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #272727;
+  line-height: 140%;
+  margin-right: 1rem;
 }
-.chat-list-box a:hover {
-  background-color: #262A53;
+.header-section .navbar-nav .nav-item .nav-link:hover {
+  color: #055394;
 }
 
-.secondary-dashboard-wrap .page-body-wrap-2 {
-  padding-left: 60px;
-}
-
-.modal {
-  z-index: 9999 !important;
-}
-
-.check-form-box {
-  padding: 0.8rem 0.9rem;
-  background: #FCFCFC;
-  border: 1px solid #EFF0F7;
-  border-radius: 1rem;
-  margin-top: 1rem;
-}
-.check-form-box .media {
-  align-items: center;
-}
-.check-form-box .media .media-body {
-  margin-left: 1rem;
-}
-.check-form-box h6 {
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: #6E7191;
-  letter-spacing: 1px;
-  line-height: 140%;
-}
-.check-form-box p {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #000000;
-  letter-spacing: 1px;
-  line-height: 140%;
-}
-.check-form-box span {
-  font-size: 0.813rem;
-  font-weight: 400;
-  color: #6E7191;
-  letter-spacing: 1px;
-  line-height: 140%;
-  line-height: 100%;
-}
-.check-form-box .form-check .form-check-input {
-  width: 1.5rem;
-  display: inline-block;
-  height: 1.5rem;
-  border-radius: 50%;
-  background-color: #D9DBE9;
-  border: 0;
-}
-.check-form-box .form-check .form-check-input:checked {
-  background-color: #007099;
-  border-color: #007099;
-}
-
-.check-form-box-transparent {
-  margin-top: 1rem;
-}
-.check-form-box-transparent .media {
-  align-items: center;
-}
-.check-form-box-transparent .media .media-body {
-  margin-left: 1rem;
-}
-.check-form-box-transparent h6 {
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: #6E7191;
-  letter-spacing: 1px;
-  line-height: 140%;
-}
-.check-form-box-transparent p {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #000000;
-  letter-spacing: 1px;
-  line-height: 140%;
-}
-.check-form-box-transparent span {
-  font-size: 0.813rem;
-  font-weight: 400;
-  color: #6E7191;
-  letter-spacing: 1px;
-  line-height: 140%;
-}
-.check-form-box-transparent .form-check .form-check-input {
-  width: 1.5rem;
-  display: inline-block;
-  height: 1.5rem;
-  border-radius: 50%;
-  background-color: #D9DBE9;
-  border: 0;
-}
-.check-form-box-transparent .form-check .form-check-input:checked {
-  background-color: #007099;
-  border-color: #007099;
-}
-
-@media (min-width: 320px) and (max-width: 575px) {
-  .common-button {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 110%;
-    background: #262A53;
-    display: inline-block;
-    letter-spacing: 1px;
-    padding: 1.3rem 3.7rem;
-    border-radius: 1rem;
-    transition: all linear 0.3s;
-    padding: 1rem 1rem;
-    min-width: 100% !important;
-  }
-  .secondary-dashboard-wrap .page-body-wrap-2 {
-    padding-left: 0rem;
-  }
-}
-@media (min-width: 575px) and (max-width: 767px) {
-  .secondary-dashboard-wrap .page-body-wrap-2 {
-    padding-left: 0rem;
-  }
-}
-@media (min-width: 767px) and (max-width: 991px) {
-  .secondary-dashboard-wrap .page-body-wrap-2 {
-    padding-left: 0rem;
-  }
-}
+/* header css end */

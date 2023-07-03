@@ -6,8 +6,7 @@
         size: $font;
         weight: $weight;
     }
-    color: $color; 
-    letter-spacing: 1px;
+    color: $color;  
     line-height: 140%; 
 }
 
@@ -20,10 +19,9 @@
     color: $color; 
     line-height: 110%;
     background: $bg;
-    display: inline-block;
-    letter-spacing: 1px;
-    padding: 1.3rem 3.7rem;
-    border-radius: 1rem;
+    display: inline-block; 
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
     transition: all linear .3s;
 }
 
