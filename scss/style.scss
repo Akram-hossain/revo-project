@@ -15,25 +15,25 @@ $base4: v.$base4;
 
 
 // regular css @s
-.main-page-wrapper{
-    width: 100%;
-    display: block;
-    background-color: $light;
+.japanease-font {
     font-family: 'Noto Sans JP', sans-serif;
-} 
+}
 
-.default-bttn{
-    @include m.button(1rem,$light,$primary);
-    border: 1px solid $primary; 
-    &:hover{
+.default-bttn {
+    @include m.button(1rem, $light, $primary);
+    border: 1px solid $primary;
+
+    &:hover {
         background-color: $light;
         color: $primary;
     }
 }
-.secondary-bttn{
-    @include m.button(1rem,$primary,$light);
-    border: 1px solid $primary; 
-    &:hover{
+
+.secondary-bttn {
+    @include m.button(1rem, $primary, $light);
+    border: 1px solid $primary;
+
+    &:hover {
         background-color: $primary;
         color: $light;
     }
@@ -46,14 +46,16 @@ $base4: v.$base4;
     h2 {
         @include m.para(5rem, 700, v.$primary);
     }
+
     p {
         @include m.para(2rem, 700, v.$primary);
     }
-} 
+}
 
-.pa-y4{
+.pa-y4 {
     padding: 6rem 0;
 }
+
 // regular css @e
 
 
@@ -66,27 +68,36 @@ $base4: v.$base4;
     // left: 0;
     // width: 100%;
     font-family: 'Noto Sans JP', sans-serif;
+
     .navbar-nav .nav-item .nav-link {
         @include m.para(1rem, 700, v.$base2);
-        margin-right: 1rem; 
-        &:hover{
+        margin-right: 1rem;
+
+        &:hover {
             color: $primary;
         }
-    }  
+    }
+
+    .navbar-brand {
+        img {
+            width: 13rem;
+        }
+    }
 
 }
 
 /* header css end */
 
 // hero css @s
- 
+
 .hero-section {
-    background-color: $base1; 
-    @include m.bgi('../images/hero-bg.png'); 
-     background-position: bottom center;
-    .hero-ol{
+    background-color: $base1;
+    @include m.bgi('../images/hero-bg.png');
+    background-position: bottom center;
+
+    .hero-ol {
         padding: 8rem 0;
-        @include m.bgi('../images/hero-ol-img.svg'); 
+        @include m.bgi('../images/hero-ol-img.svg');
         background-position: bottom center;
     }
 }
@@ -96,74 +107,87 @@ $base4: v.$base4;
     text-align: end;
 
     h5 {
-        @include m.para(2rem, 700, $light); 
+        @include m.para(2rem, 700, $light);
     }
-    h3 {
-        @include m.para(4rem, 600, $light); 
-    }
-    h1 {
-        @include m.para(5rem, 700, $light); 
-    } 
 
-    .hero-bttn{
+    h3 {
+        @include m.para(4rem, 600, $light);
+    }
+
+    h1 {
+        @include m.para(5rem, 700, $light);
+    }
+
+    .hero-bttn {
         margin-top: 4rem;
         margin-bottom: 2rem;
-        a{
+
+        a {
             border: 1px solid $light;
         }
-        i{
+
+        i {
             margin-left: 3rem;
         }
     }
-    .scroll-down{
+
+    .scroll-down {
         margin-top: 2rem;
-        position: absolute; 
+        position: absolute;
         transform: rotate(-90deg);
-        a{
+
+        a {
             @include m.para(0.9rem, 400, $light);
         }
     }
 }
 
 // custom bg
-.custom-bg-one{
+.custom-bg-one {
     @include m.bgi('../images/hero-bottom-bg.png');
     background-size: 100%;
     background-position: top center;
 }
 
-.about-txt{
+.about-txt {
     font-family: 'Noto Sans JP', sans-serif;
-    h2{
-        @include m.para(5rem, 700, $primary); 
+
+    h2 {
+        @include m.para(5rem, 700, $primary);
     }
-    h5{
-        @include m.para(2rem, 700, $primary); 
+
+    h5 {
+        @include m.para(2rem, 700, $primary);
     }
-    .para{
+
+    .para {
         margin-left: 2rem;
         margin-top: 3rem;
         margin-right: 1rem;
-        h6{
-            @include m.para(2rem, 700, $base2); 
+
+        h6 {
+            @include m.para(2rem, 700, $base2);
             margin-bottom: 2.5rem;
         }
-        p{
-            @include m.para(1.5rem, 500, $base2);  
+
+        p {
+            @include m.para(1.5rem, 500, $base2);
             margin-bottom: 4rem;
             opacity: 0.7;
         }
-        a{
-            padding-left: 4rem; 
-            i{
+
+        a {
+            padding-left: 4rem;
+
+            i {
                 margin-left: 1.8rem;
             }
         }
     }
 }
 
-.about-img{
-    img{
+.about-img {
+    img {
         border-radius: 0.8rem;
         display: block;
         width: 100%;
@@ -171,35 +195,39 @@ $base4: v.$base4;
 }
 
 
-.pickup-box{
+.pickup-box {
     @include m.df;
-    padding:  5rem 0 2rem;
-    span{
+    padding: 5rem 0 2rem;
+
+    span {
         display: inline-block;
         @include m.para(2rem, 700, $primary);
         border: 1px solid $primary;
-        border-radius: 0.5rem; 
+        border-radius: 0.5rem;
         padding: .1rem .5rem;
     }
-    div{
+
+    div {
         margin-left: 2rem;
         @include m.df;
         border-bottom: 2px solid $base2;
         padding-bottom: 0.8rem;
         padding-left: 3rem;
         width: 80%;
-        p{
+
+        p {
             @include m.para(1.5rem, 400, $base2);
             margin-right: 2.5rem;
         }
-        h6{
-            @include m.para(1.5rem, 700, $base4); 
+
+        h6 {
+            @include m.para(1.5rem, 700, $base4);
             margin-left: 2.5rem;
         }
     }
 }
 
-.parallax-bg-box{
+.parallax-bg-box {
     @include m.bgi('../images/paralax-bg.png');
     min-height: 28rem;
     background-attachment: fixed;
@@ -207,41 +235,115 @@ $base4: v.$base4;
 }
 
 // services css @s
-.services-section{
+.services-section {
     @include m.bgi('../images/sevices-bg.png');
     background-color: #055394;
-    .common-heading{
-        h2,p{
+
+    .common-heading {
+
+        h2,
+        p {
             color: $light;
         }
     }
-    .services-txt{
-        h5{
-            @include m.para(2rem, 700, $light); 
-            margin-bottom: 2.5rem;
+
+    .services-txt {
+        h5 {
+            @include m.para(2rem, 700, $light);
+            margin-bottom: 1.5rem;
         }
-        p{
+
+        h6 {
+            @include m.para(1.5rem, 400, $light);
+            margin-bottom: 1.5rem;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: -10px;
+                width: 2.5rem;
+                height: 2px;
+                background-color: $light;
+            }
+        }
+
+        p {
             @include m.para(1.5rem, 400, $light);
             opacity: 0.7;
         }
     }
 }
 
+// feedback css start
+.feedback-section {
+    background-color: $primary;
+
+    .feedback-head {
+        margin-bottom: 4rem;
+
+        h5 {
+            @include m.para(2rem, 700, $light);
+        }
+    }
+
+    .feedback-carousel {
+        .feedback-txt-box { 
+            @include m.box(1rem,1rem,$light);
+            padding-right: 0;
+            padding-left: 0.4rem;
+            max-width: 40%;
+            .media{
+                align-items: flex-start;
+                .avatar{
+                    text-align: center;
+                    margin-right: 1rem;
+                    img{
+                        width: 9rem;
+                        height: 9rem;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                    span{
+                        display: block;
+                        @include m.para(1.15rem, 500, $base2);
+                        margin: .9rem 0;
+                        opacity: 0.8;
+                    }
+                    h6{ 
+                        @include m.para(1.5rem, 500, $base2);
+                        opacity: 0.8;
+                    }
+                }
+                .media-body{
+                    h5{
+                        background: rgb(5, 83, 148);
+                        background: linear-gradient(90deg, rgba(5, 83, 148, 1) 0%, rgba(116, 180, 217, 1) 100%);
+                        @include m.para(1.5rem, 700, $light);
+                        padding: .5rem .1rem;
+                        padding-left: 1rem;
+                    }
+                    p{
+                        @include m.para(1.5rem, 500, $base2);
+                        opacity: 0.7;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 // ======= responsive css @s
 // small phone device
-@include q.responsive(phone){
-    
-}
+@include q.responsive(phone) {}
 
 // landscape phone device 
-@include q.responsive(landphone){
-    
-}
+@include q.responsive(landphone) {}
 
 // tablet device 
-@include q.responsive(tablet){
-    
-}
+@include q.responsive(tablet) {}
 
 // ======= responsive css @e

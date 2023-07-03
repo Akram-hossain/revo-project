@@ -99,10 +99,7 @@ body {
   overflow-x: hidden;
 }
 
-.main-page-wrapper {
-  width: 100%;
-  display: block;
-  background-color: #ffffff;
+.japanease-font {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -176,6 +173,9 @@ body {
 }
 .header-section .navbar-nav .nav-item .nav-link:hover {
   color: #055394;
+}
+.header-section .navbar-brand img {
+  width: 13rem;
 }
 
 /* header css end */
@@ -355,7 +355,8 @@ body {
   background-repeat: no-repeat;
   background-color: #055394;
 }
-.services-section .common-heading h2, .services-section .common-heading p {
+.services-section .common-heading h2,
+.services-section .common-heading p {
   color: #ffffff;
 }
 .services-section .services-txt h5 {
@@ -363,7 +364,24 @@ body {
   font-weight: 700;
   color: #ffffff;
   line-height: 140%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.services-section .services-txt h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 140%;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.services-section .services-txt h6:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -10px;
+  width: 2.5rem;
+  height: 2px;
+  background-color: #ffffff;
 }
 .services-section .services-txt p {
   font-size: 1.5rem;
@@ -371,4 +389,72 @@ body {
   color: #ffffff;
   line-height: 140%;
   opacity: 0.7;
+}
+
+.feedback-section {
+  background-color: #055394;
+}
+.feedback-section .feedback-head {
+  margin-bottom: 4rem;
+}
+.feedback-section .feedback-head h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 140%;
+}
+.feedback-section .feedback-carousel .feedback-txt-box {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding-right: 0;
+  padding-left: 0.4rem;
+  max-width: 40%;
+}
+.feedback-section .feedback-carousel .feedback-txt-box .media {
+  align-items: flex-start;
+}
+.feedback-section .feedback-carousel .feedback-txt-box .media .avatar {
+  text-align: center;
+  margin-right: 1rem;
+}
+.feedback-section .feedback-carousel .feedback-txt-box .media .avatar img {
+  width: 9rem;
+  height: 9rem;
+  margin: 0 auto;
+  display: block;
+}
+.feedback-section .feedback-carousel .feedback-txt-box .media .avatar span {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #272727;
+  line-height: 140%;
+  margin: 0.9rem 0;
+  opacity: 0.8;
+}
+.feedback-section .feedback-carousel .feedback-txt-box .media .avatar h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #272727;
+  line-height: 140%;
+  opacity: 0.8;
+}
+.feedback-section .feedback-carousel .feedback-txt-box .media .media-body h5 {
+  background: rgb(5, 83, 148);
+  background: linear-gradient(90deg, rgb(5, 83, 148) 0%, rgb(116, 180, 217) 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 140%;
+  padding: 0.5rem 0.1rem;
+  padding-left: 1rem;
+}
+.feedback-section .feedback-carousel .feedback-txt-box .media .media-body p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #272727;
+  line-height: 140%;
+  opacity: 0.7;
+  margin-top: 1rem;
 }
