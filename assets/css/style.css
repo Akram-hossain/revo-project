@@ -145,27 +145,26 @@ body {
   margin-bottom: 2rem;
 }
 .common-heading h2 {
-  font-size: 2.4rem;
-  font-weight: 500;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #055394;
+  line-height: 140%;
+}
+.common-heading p {
+  font-size: 2rem;
+  font-weight: 700;
   color: #055394;
   line-height: 140%;
 }
 
-.common-para {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #055394;
-  line-height: 140%;
+.pa-y4 {
+  padding: 6rem 0;
 }
 
 /* header css start */
 .header-section {
   padding-top: 1rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1607843137);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   font-family: "Noto Sans JP", sans-serif;
 }
 .header-section .navbar-nav .nav-item .nav-link {
@@ -181,43 +180,195 @@ body {
 
 /* header css end */
 .hero-section {
-  margin-top: 5.15rem;
-}
-
-/* hero css start */
-.hero-section {
   background-color: #FEFEFE;
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/hero-bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.hero-section .hero-ol {
+  padding: 8rem 0;
+  background-image: url("../images/hero-ol-img.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .hero-txt-wrap {
-  padding: 5rem 0;
+  position: relative;
   text-align: end;
 }
 .hero-txt-wrap h5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 140%;
 }
 .hero-txt-wrap h3 {
-  font-size: 2.7rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #ffffff;
   line-height: 140%;
 }
 .hero-txt-wrap h1 {
-  font-size: 3.7rem;
+  font-size: 5rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 140%;
 }
 .hero-txt-wrap .hero-bttn {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.hero-txt-wrap .hero-bttn a {
+  border: 1px solid #ffffff;
 }
 .hero-txt-wrap .hero-bttn i {
   margin-left: 3rem;
+}
+.hero-txt-wrap .scroll-down {
+  margin-top: 2rem;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+.hero-txt-wrap .scroll-down a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 140%;
+}
+
+.custom-bg-one {
+  background-image: url("../images/hero-bottom-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+}
+
+.about-txt {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.about-txt h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #055394;
+  line-height: 140%;
+}
+.about-txt h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #055394;
+  line-height: 140%;
+}
+.about-txt .para {
+  margin-left: 2rem;
+  margin-top: 3rem;
+  margin-right: 1rem;
+}
+.about-txt .para h6 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #272727;
+  line-height: 140%;
+  margin-bottom: 2.5rem;
+}
+.about-txt .para p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #272727;
+  line-height: 140%;
+  margin-bottom: 4rem;
+  opacity: 0.7;
+}
+.about-txt .para a {
+  padding-left: 4rem;
+}
+.about-txt .para a i {
+  margin-left: 1.8rem;
+}
+
+.about-img img {
+  border-radius: 0.8rem;
+  display: block;
+  width: 100%;
+}
+
+.pickup-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5rem 0 2rem;
+}
+.pickup-box span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #055394;
+  line-height: 140%;
+  border: 1px solid #055394;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+}
+.pickup-box div {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid #272727;
+  padding-bottom: 0.8rem;
+  padding-left: 3rem;
+  width: 80%;
+}
+.pickup-box div p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #272727;
+  line-height: 140%;
+  margin-right: 2.5rem;
+}
+.pickup-box div h6 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+  line-height: 140%;
+  margin-left: 2.5rem;
+}
+
+.parallax-bg-box {
+  background-image: url("../images/paralax-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 28rem;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+
+.services-section {
+  background-image: url("../images/sevices-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #055394;
+}
+.services-section .common-heading h2, .services-section .common-heading p {
+  color: #ffffff;
+}
+.services-section .services-txt h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 140%;
+  margin-bottom: 2.5rem;
+}
+.services-section .services-txt p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 140%;
+  opacity: 0.7;
 }

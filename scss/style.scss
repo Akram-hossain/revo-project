@@ -11,6 +11,7 @@ $light: v.$light;
 $base1: v.$base1;
 $base2: v.$base2;
 $base3: v.$base3;
+$base4: v.$base4;
 
 
 // regular css @s
@@ -43,12 +44,15 @@ $base3: v.$base3;
     margin-bottom: 2rem;
 
     h2 {
-        @include m.para(2.4rem, 500, v.$primary);
+        @include m.para(5rem, 700, v.$primary);
     }
-}
+    p {
+        @include m.para(2rem, 700, v.$primary);
+    }
+} 
 
-.common-para {
-    @include m.para(1rem, 400, v.$primary);
+.pa-y4{
+    padding: 6rem 0;
 }
 // regular css @e
 
@@ -57,10 +61,10 @@ $base3: v.$base3;
 .header-section {
     padding-top: 1rem;
     box-shadow: 0px 10px 10px #00000029;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
     font-family: 'Noto Sans JP', sans-serif;
     .navbar-nav .nav-item .nav-link {
         @include m.para(1rem, 700, v.$base2);
@@ -75,34 +79,150 @@ $base3: v.$base3;
 /* header css end */
 
 // hero css @s
-.hero-section{
-    margin-top: 5.15rem;
-}
-
-/* hero css start */
+ 
 .hero-section {
     background-color: $base1; 
-    @include m.bgi('../images/hero-bg.jpg');
+    @include m.bgi('../images/hero-bg.png'); 
+     background-position: bottom center;
+    .hero-ol{
+        padding: 8rem 0;
+        @include m.bgi('../images/hero-ol-img.svg'); 
+        background-position: bottom center;
+    }
 }
 
 .hero-txt-wrap {
-    padding: 5rem 0;
+    position: relative;
     text-align: end;
 
     h5 {
-        @include m.para(1.5rem, 700, v.$light); 
+        @include m.para(2rem, 700, $light); 
     }
     h3 {
-        @include m.para(2.7rem, 600, v.$light); 
+        @include m.para(4rem, 600, $light); 
     }
     h1 {
-        @include m.para(3.7rem, 700, v.$light); 
+        @include m.para(5rem, 700, $light); 
     } 
 
     .hero-bttn{
-        margin-top: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        a{
+            border: 1px solid $light;
+        }
         i{
             margin-left: 3rem;
+        }
+    }
+    .scroll-down{
+        margin-top: 2rem;
+        position: absolute; 
+        transform: rotate(-90deg);
+        a{
+            @include m.para(0.9rem, 400, $light);
+        }
+    }
+}
+
+// custom bg
+.custom-bg-one{
+    @include m.bgi('../images/hero-bottom-bg.png');
+    background-size: 100%;
+    background-position: top center;
+}
+
+.about-txt{
+    font-family: 'Noto Sans JP', sans-serif;
+    h2{
+        @include m.para(5rem, 700, $primary); 
+    }
+    h5{
+        @include m.para(2rem, 700, $primary); 
+    }
+    .para{
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-right: 1rem;
+        h6{
+            @include m.para(2rem, 700, $base2); 
+            margin-bottom: 2.5rem;
+        }
+        p{
+            @include m.para(1.5rem, 500, $base2);  
+            margin-bottom: 4rem;
+            opacity: 0.7;
+        }
+        a{
+            padding-left: 4rem; 
+            i{
+                margin-left: 1.8rem;
+            }
+        }
+    }
+}
+
+.about-img{
+    img{
+        border-radius: 0.8rem;
+        display: block;
+        width: 100%;
+    }
+}
+
+
+.pickup-box{
+    @include m.df;
+    padding:  5rem 0 2rem;
+    span{
+        display: inline-block;
+        @include m.para(2rem, 700, $primary);
+        border: 1px solid $primary;
+        border-radius: 0.5rem; 
+        padding: .1rem .5rem;
+    }
+    div{
+        margin-left: 2rem;
+        @include m.df;
+        border-bottom: 2px solid $base2;
+        padding-bottom: 0.8rem;
+        padding-left: 3rem;
+        width: 80%;
+        p{
+            @include m.para(1.5rem, 400, $base2);
+            margin-right: 2.5rem;
+        }
+        h6{
+            @include m.para(1.5rem, 700, $base4); 
+            margin-left: 2.5rem;
+        }
+    }
+}
+
+.parallax-bg-box{
+    @include m.bgi('../images/paralax-bg.png');
+    min-height: 28rem;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+
+// services css @s
+.services-section{
+    @include m.bgi('../images/sevices-bg.png');
+    background-color: #055394;
+    .common-heading{
+        h2,p{
+            color: $light;
+        }
+    }
+    .services-txt{
+        h5{
+            @include m.para(2rem, 700, $light); 
+            margin-bottom: 2.5rem;
+        }
+        p{
+            @include m.para(1.5rem, 400, $light);
+            opacity: 0.7;
         }
     }
 }
