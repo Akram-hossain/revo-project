@@ -336,6 +336,140 @@ $base4: v.$base4;
     }
 }
 
+// post css start 
+.post-section{
+    background-color: $primary;
+    .post-box{
+        position: relative; 
+        .thumbnail{
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .txt{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            @include m.df(space-between);
+            flex-direction: column;
+            padding: 1rem;
+            h4{
+                @include m.para(2rem, 700, $light);
+            }
+            a{
+                padding-left: 3rem;
+                i{
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.news-section{
+
+    .news-txt-box{
+        @include m.df;
+        border-top: 2px solid $base2;
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
+        img{
+            width: 10rem;
+            border-radius: 0.675rem;
+        }
+        p{
+            @include m.para(1.15rem, 400, $base2);
+            margin: 0 2rem;
+        }
+        h6{
+            @include m.para(1.5rem, 700, $base2); 
+        }
+        a{
+            margin-left: auto;
+        }
+        
+    }
+    .brdr-btm{
+        border-bottom: 2px solid $base2;
+        padding-bottom: 0.5rem;
+    }
+    .text-center{
+        margin-top: 4rem;
+        a{
+            padding-left: 4rem;
+            i{
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+// get start css
+.get-start-box{
+    @include m.bgi('../images/get-bg');
+    padding: 4rem 3rem;
+    text-align: center;
+    background: rgb(5, 83, 148);
+    background: linear-gradient(90deg, rgba(5, 83, 148, 1) 0%, rgba(116, 180, 217, 1) 100%);
+    border-radius: 1rem;
+    h3{
+        @include m.para(3.5rem, 700, $light); 
+    }
+    h6{
+        @include m.para(1.5rem, 500, $light); 
+        opacity: .8;
+        margin: 2rem 0;
+    }
+    .bttns{
+        a{
+            border: 1px solid $light;
+            i{
+                padding-left: 3rem;
+            }
+        }
+    }
+}
+
+.footer-section{
+    padding-top: 3rem;
+    .ftr-logo{
+        p{
+            @include m.para(1.15rem, 700, $primary); 
+        }
+        a{
+            display: block;
+        }
+    }
+    .ftr-menu{
+       ul{
+        @include m.df(flex-end);
+        li{
+            a{
+                display: block;
+                @include m.para(1.5rem, 700, $base2); 
+                margin-left: 1rem;
+            }
+        }
+       }
+    }
+    .ftr-copy{
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 4rem;
+        p{
+            @include m.para(1.15rem, 500, $base2); 
+        }
+    }
+}
+
+
+
+
+
+
 // ======= responsive css @s
 // small phone device
 @include q.responsive(phone) {}
