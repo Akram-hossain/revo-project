@@ -465,6 +465,99 @@ $base4: v.$base4;
     }
 }
 
+// vision css @s
+.value-box-wrap{
+    @include m.df(center);
+    .value-txt-item{
+        border: 2px solid $primary;
+        width: 360px;
+        height: 360px;
+        @include m.df(center);
+        flex-direction: column;
+        border-radius: 50%;
+        h5{
+            @include m.para(1.5rem, 700, $primary);
+            margin-bottom: 3rem; 
+        }
+        h6{
+            @include m.para(1.5rem, 700, $base4);
+            margin-bottom: 2rem; 
+        }
+        p{
+            @include m.para(1.5rem, 500, $base2); 
+            text-align: center;
+        }
+    }
+    .custom-margin{
+        margin: 0 -2.5rem;
+    }
+}
+
+// team css start
+.team-person-box{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    .thumbnail{
+        img{
+            display: block;
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+    .txt{
+        h5{
+            @include m.para(1.5rem, 700, $base4);
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        h6{
+            @include m.para(2rem, 700, $base4);
+            margin-bottom: 1rem;
+        }
+        p{
+            @include m.para(1.1rem, 500, $base2);
+            text-align: left;
+        }
+    }
+}
+// team css end
+
+.custom-margin-top{
+    margin-top: -12rem;
+}
+
+.company-section{
+    background-color: $primary;
+    padding-bottom: 20rem;
+    .company-title{
+        h2{
+            @include m.para(5rem, 700, $light);
+        }
+        h5{
+            @include m.para(2rem, 700, $light);
+        }
+    }
+    .company-table-list{
+        .d-flex{
+            padding: 1.5rem .5rem;
+            border-top: 1px solid $base1;
+            h6{
+                @include m.para(1.5rem, 500, $base1);
+                opacity: .8;
+                margin-right: 2rem;
+                min-width: 100px
+            }
+            h5{
+                @include m.para(1.5rem, 700, $base1);
+            }
+            &:last-child{
+                border-bottom: 1px solid $base1;
+            }
+        }
+    }
+}
 
 
 
