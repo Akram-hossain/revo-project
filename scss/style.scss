@@ -16,7 +16,7 @@ $base4: v.$base4;
 
 // regular css @s
 .japanease-font {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 .default-bttn {
@@ -69,7 +69,7 @@ $base4: v.$base4;
     background-color: $light;
     width: 100%;
     z-index: 9999;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 
     .navbar-nav .nav-item .nav-link {
         @include m.para(1rem, 700, v.$base2);
@@ -129,6 +129,7 @@ $base4: v.$base4;
 
     h5 {
         @include m.para(2rem, 700, $light);
+        font-family: 'Zen Kaku Gothic New', sans-serif;
     }
 
     h3 {
@@ -185,7 +186,7 @@ $base4: v.$base4;
 }
 
 .about-txt {
-    font-family: 'Noto Sans JP', sans-serif;
+   
 
     h2 {
         @include m.para(5rem, 700, $primary);
@@ -193,6 +194,7 @@ $base4: v.$base4;
 
     h5 {
         @include m.para(2rem, 700, $primary);
+        font-family: 'Zen Kaku Gothic New', sans-serif;
     }
 
     .para {
@@ -203,12 +205,14 @@ $base4: v.$base4;
         h6 {
             @include m.para(2rem, 700, $base2);
             margin-bottom: 2.5rem;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
         }
 
         p {
             @include m.para(1.5rem, 500, $base2);
             margin-bottom: 4rem;
             opacity: 0.7;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
         }
 
         a {
@@ -272,6 +276,7 @@ $base4: v.$base4;
         h6 {
             @include m.para(1.5rem, 700, $base4);
             margin-left: 2.5rem;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
         }
     }
 }
@@ -301,13 +306,14 @@ $base4: v.$base4;
     h5 {
         @include m.para(2rem, 700, $light);
         margin-bottom: 1.5rem;
+        font-family: 'Zen Kaku Gothic New', sans-serif;
     }
 
     h6 {
         @include m.para(1.5rem, 400, $light);
         margin-bottom: 1.5rem;
         position: relative;
-
+        font-family: 'Zen Kaku Gothic New', sans-serif;
         &:before {
             position: absolute;
             content: "";
@@ -322,6 +328,7 @@ $base4: v.$base4;
     p {
         @include m.para(1.5rem, 400, $light);
         opacity: 0.7;
+        font-family: 'Zen Kaku Gothic New', sans-serif;
     }
 }
 
@@ -348,6 +355,7 @@ $base4: v.$base4;
     .services-optional-title {
         h4 {
             @include m.para(2rem, 700, $primary);
+            font-family: 'Zen Kaku Gothic New', sans-serif;
         }
     }
 }
@@ -406,7 +414,7 @@ $base4: v.$base4;
 // feedback css start
 .feedback-section {
     background-color: $primary;
-
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     .feedback-head {
         margin-bottom: 4rem;
 
@@ -516,6 +524,7 @@ $base4: v.$base4;
 
             h4 {
                 @include m.para(2rem, 700, $light);
+                font-family: 'Zen Kaku Gothic New', sans-serif;
             }
 
             a {
@@ -555,11 +564,12 @@ $base4: v.$base4;
 
         p {
             @include m.para(1.15rem, 400, $base2);
-            margin: 0 2rem;
+            margin: 0 2rem; 
         }
 
         h6 {
             @include m.para(1.5rem, 700, $base2);
+            font-family: 'Zen Kaku Gothic New', sans-serif;
         }
 
         a {
@@ -608,7 +618,7 @@ $base4: v.$base4;
     background: rgb(5, 83, 148);
     background: linear-gradient(90deg, rgba(5, 83, 148, 1) 0%, rgba(116, 180, 217, 1) 100%);
     border-radius: 1rem;
-
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     h3 {
         @include m.para(3.5rem, 700, $light);
     }
@@ -636,6 +646,7 @@ $base4: v.$base4;
     .ftr-logo {
         p {
             @include m.para(1.15rem, 700, $primary);
+            font-family: 'Zen Kaku Gothic New', sans-serif;
         }
 
         a {
@@ -652,6 +663,7 @@ $base4: v.$base4;
                     display: block;
                     @include m.para(1.5rem, 700, $base2);
                     margin-left: 1rem;
+                    font-family: 'Zen Kaku Gothic New', sans-serif;
                 }
             }
         }
@@ -664,6 +676,7 @@ $base4: v.$base4;
 
         p {
             @include m.para(1.15rem, 500, $base2);
+            font-family: 'Zen Kaku Gothic New', sans-serif;
         }
     }
 }

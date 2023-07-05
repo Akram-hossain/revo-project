@@ -289,6 +289,20 @@
   .about-txt .text-md-end {
     margin-top: 1rem;
   }
+  .services-hero-section {
+    margin-top: 66px;
+  }
+  .services-hero-section .hero-ol {
+    padding: 2rem 0;
+  }
+  .services-bloock-bg-2::before,
+  .services-bloock-bg::before {
+    background-color: transparent;
+  }
+  .services-bloock-bg-2 .services-txt p,
+  .services-bloock-bg .services-txt p {
+    color: #333333;
+  }
 }
 @media (min-width: 575px) and (max-width: 767px) {
   .header-section .navbar-nav .nav-item .nav-link {

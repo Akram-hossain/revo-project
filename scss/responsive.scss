@@ -76,7 +76,7 @@
             position: absolute;
             left: 4%;
             bottom: 0;
-            width: 92%; 
+            width: 92%;
         }
     }
 
@@ -388,6 +388,23 @@
     .about-txt .text-md-end {
         margin-top: 1rem;
     }
+
+    // services css start 
+    .services-hero-section {
+        margin-top: 66px;
+        .hero-ol{
+            padding: 2rem 0;
+        }
+    }
+    .services-bloock-bg-2::before ,
+    .services-bloock-bg::before {
+        background-color: transparent;
+    }
+    .services-bloock-bg-2 .services-txt p,
+    .services-bloock-bg .services-txt p{
+        color: v.$base4;
+    }
+    
 }
 
 // landscape phone device 

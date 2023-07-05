@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Noto+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
 /*----------------------------------------------------------------------------------------------------------------------
 Project:	    Mairu
 Version:        1.0.0
@@ -150,7 +150,7 @@ body {
 }
 
 .japanease-font {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .default-bttn {
@@ -218,7 +218,7 @@ body {
   background-color: #ffffff;
   width: 100%;
   z-index: 9999;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .header-section .navbar-nav .nav-item .nav-link {
   font-size: 1rem;
@@ -287,6 +287,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   line-height: 140%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .hero-txt-wrap h3 {
   font-size: 4rem;
@@ -344,9 +345,6 @@ body {
   background-position: top center;
 }
 
-.about-txt {
-  font-family: "Noto Sans JP", sans-serif;
-}
 .about-txt h2 {
   font-size: 5rem;
   font-weight: 700;
@@ -358,6 +356,7 @@ body {
   font-weight: 700;
   color: #055394;
   line-height: 140%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .about-txt .para {
   margin-left: 2rem;
@@ -370,6 +369,7 @@ body {
   color: #272727;
   line-height: 140%;
   margin-bottom: 2.5rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .about-txt .para p {
   font-size: 1.5rem;
@@ -378,6 +378,7 @@ body {
   line-height: 140%;
   margin-bottom: 4rem;
   opacity: 0.7;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .about-txt .para a {
   padding-left: 4rem;
@@ -447,6 +448,7 @@ body {
   color: #333333;
   line-height: 140%;
   margin-left: 2.5rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .parallax-bg-box {
@@ -477,6 +479,7 @@ body {
   color: #ffffff;
   line-height: 140%;
   margin-bottom: 1.5rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .services-txt h6 {
   font-size: 1.5rem;
@@ -485,6 +488,7 @@ body {
   line-height: 140%;
   margin-bottom: 1.5rem;
   position: relative;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .services-txt h6:before {
   position: absolute;
@@ -501,6 +505,7 @@ body {
   color: #ffffff;
   line-height: 140%;
   opacity: 0.7;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .services-main-section .services-txt h5 {
@@ -521,6 +526,7 @@ body {
   font-weight: 700;
   color: #055394;
   line-height: 140%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 /* services text bg css */
@@ -568,6 +574,7 @@ body {
 
 .feedback-section {
   background-color: #055394;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .feedback-section .feedback-head {
   margin-bottom: 4rem;
@@ -671,6 +678,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   line-height: 140%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .post-section .post-box .txt a {
   padding-left: 3rem;
@@ -714,6 +722,7 @@ body {
   font-weight: 700;
   color: #272727;
   line-height: 140%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .news-section .news-txt-box a {
   margin-left: auto;
@@ -752,6 +761,7 @@ body {
   background: rgb(5, 83, 148);
   background: linear-gradient(90deg, rgb(5, 83, 148) 0%, rgb(116, 180, 217) 100%);
   border-radius: 1rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .get-start-box h3 {
   font-size: 3.5rem;
@@ -782,6 +792,7 @@ body {
   font-weight: 700;
   color: #055394;
   line-height: 140%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .footer-section .ftr-logo a {
   display: block;
@@ -798,6 +809,7 @@ body {
   color: #272727;
   line-height: 140%;
   margin-left: 1rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .footer-section .ftr-copy {
   text-align: center;
@@ -809,6 +821,7 @@ body {
   font-weight: 500;
   color: #272727;
   line-height: 140%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .value-box-wrap {

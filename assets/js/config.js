@@ -7,7 +7,7 @@ $(document).ready(function () {
     arrows: false,
     autoPlay: true,
     centerMode: true,
-    centerPadding: '450px',
+    centerPadding: '430px',
     dots: false,
     responsive: [
       {
