@@ -39,6 +39,399 @@
         }
     }
 
+    .hero-section {
+        margin-top: 66px;
+        background-image: none;
+        position: relative;
+        background-image: url('../images/mobile-hero.png');
+
+        .hero-ol {
+            background-image: url('../images/mobile-ol.svg');
+        }
+    }
+
+    br {
+        display: none;
+    }
+
+    .hero-txt-wrap {
+        margin: 5rem 0;
+
+        h3 {
+            font-size: 2rem;
+            line-height: 140%;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            line-height: 140%;
+        }
+
+        h5 {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-bttn {
+            position: absolute;
+            left: 4%;
+            bottom: 0;
+            width: 92%; 
+        }
+    }
+
+    .hero-bttn a {
+        display: block;
+        width: 100%;
+    }
+
+    .scroll-down {
+        display: none;
+        height: 0;
+    }
+
+    .pa-y4 {
+        padding: 2rem 0;
+    }
+
+    .pickup-box {
+        padding: 0;
+        padding-top: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pickup-box div {
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        h6 {
+            margin-left: 0;
+            font-size: 1rem;
+        }
+    }
+
+    .pickup-box span {
+        font-size: 1.4rem;
+    }
+
+    .about-txt {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .common-heading {
+        margin-bottom: 1rem;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .about-txt {
+        margin-top: 2rem;
+
+        .para {
+            margin: 0;
+            margin-top: 2rem;
+
+            h6 {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .text-md-end {
+            text-align: end;
+        }
+    }
+
+    .ordr_1 {
+        order: 1;
+    }
+
+    .ordr_2 {
+        order: 2;
+    }
+
+    .services-txt {
+        margin-top: 2rem;
+
+        h5 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .custom-margin-top-serv {
+        margin-top: 3rem;
+    }
+
+    .feedback-section .feedback-head h5 {
+        font-size: 1.5rem;
+    }
+
+    .feedback-section .feedback-carousel .feedback-txt-box {
+        margin: 0 1rem;
+        padding: 1rem;
+
+        .media {
+            flex-direction: column;
+            justify-content: center;
+
+            .avatar {
+                width: 100%;
+                margin-bottom: 1rem;
+
+                span {
+                    font-size: 1rem;
+                }
+
+                h6 {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .media-body {
+
+                h5 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    .post-section .post-box {
+        margin-bottom: 2rem;
+
+        .txt {
+            h4 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .news-section .news-txt-box {
+        .media .media-body {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        img {
+            width: 7rem;
+            margin-right: 1rem;
+        }
+
+        p {
+            margin-left: 0;
+            font-size: 1rem;
+        }
+
+        h6 {
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .get-start-box {
+        padding: 4rem 1rem;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h6 {
+            font-size: 1.1rem;
+            margin: .5rem 0;
+        }
+
+        .bttns {
+            margin-top: 3rem;
+
+            a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 0.9rem;
+
+                i {
+                    padding-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .ftr-logo {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        a {
+            margin-top: 1rem;
+
+            img {
+                width: 17rem;
+            }
+        }
+    }
+
+    .footer-section .ftr-menu {
+        margin: 3rem 0;
+
+        ul {
+            flex-direction: column;
+
+            li {
+                a {
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .footer-section .ftr-copy {
+        padding: 2rem 0;
+        padding-bottom: 1rem;
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    // vision css start
+    .vision-hero-section .hero-ol {
+        padding: 4rem 0;
+        margin-top: -1rem;
+    }
+
+    .vision-about-section {
+        background-size: 36%;
+        background-position: top right;
+        margin-top: 1rem;
+    }
+
+    .about-txt .para p {
+        margin-bottom: 0;
+    }
+
+    .value-box-wrap {
+        flex-direction: column;
+    }
+
+    .value-box-wrap .custom-margin {
+        margin: -2.5rem 0;
+    }
+
+    .team-person-box {
+        width: 85%;
+    }
+
+    .company-section .company-title {
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .company-section .company-table-list .d-flex {
+        h6 {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .custom-margin-top {
+        margin-top: 3rem;
+    }
+
+    .about-txt .text-md-end {
+        margin-top: 1rem;
+    }
+}
+
+// landscape phone device 
+@include q.responsive(landphone) {
+    .header-section .navbar-nav .nav-item .nav-link {
+        margin: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .header-section {
+        padding-bottom: 1rem;
+
+        .navbar-brand {
+            width: 120px;
+            padding: 0;
+        }
+
+        .fa-bars {
+            font-size: 1.7rem;
+            color: v.$primary;
+        }
+
+        .navbar-toggler {
+            border: 0;
+        }
+
+        .d-flex {
+            justify-content: center;
+
+            a {
+                font-size: 0.9rem;
+
+                &:first-child {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .hero-section {
+        margin-top: 66px;
+    }
+
     br {
         display: none;
     }
@@ -58,6 +451,7 @@
     .hero-bttn a {
         display: block;
         width: 100%;
+        text-align: center;
     }
 
     .scroll-down {
@@ -305,396 +699,61 @@
     }
 
     // vision css start
-    .vision-hero-section .hero-ol{
+    .vision-hero-section .hero-ol {
         padding: 4rem 0;
         margin-top: -1rem;
-    } 
-    .vision-about-section { 
-        background-size: 36%; 
-        background-position: top right;
+    }
+
+    .vision-about-section {
+        background-image: none;
         margin-top: 1rem;
     }
-    .about-txt .para p{
+
+    .about-txt .para p {
         margin-bottom: 0;
     }
-    .value-box-wrap{
+
+    .value-box-wrap {
         flex-direction: column;
     }
+
     .value-box-wrap .custom-margin {
         margin: -2.5rem 0;
     }
-    .team-person-box{
-        width: 85%;
-    }
 
-    .company-section .company-title {
-        margin-bottom: 3rem;
-        h2{
-            font-size: 2.5rem;
-        }
-        h5{
-            font-size: 1.2rem;
-        }
-    } 
-    .company-section .company-table-list .d-flex {
-        h6{
-            font-size: 1.2rem;
-            margin-right: 0.5rem;
-        }
-        h5{
-            font-size: 1.2rem;
-        }
-    }
-    .custom-margin-top{
-        margin-top: 3rem;
-    }
-}
-
-// landscape phone device 
-@include q.responsive(landphone) {
-    .header-section .navbar-nav .nav-item .nav-link {
-        margin: 0;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    .header-section {
-        padding-bottom: 1rem;
-
-        .navbar-brand {
-            width: 120px;
-            padding: 0;
-        }
-
-        .fa-bars {
-            font-size: 1.7rem;
-            color: v.$primary;
-        }
-
-        .navbar-toggler {
-            border: 0;
-        }
-
-        .d-flex {
-            justify-content: center;
-
-            a {
-                font-size: 0.9rem;
-
-                &:first-child {
-                    margin-right: 1rem;
-                }
-            }
-        }
-    }
-
-    br {
-        display: none;
-    }
-
-    .hero-txt-wrap {
-        h3 {
-            font-size: 2rem;
-            line-height: 140%;
-        }
-
-        h1 {
-            font-size: 3rem;
-            line-height: 140%;
-        }
-    }
-
-    .hero-bttn a {
-        display: block;
-        width: 100%;
-    }
-
-    .scroll-down {
-        display: none;
-        height: 0;
-    }
-
-    .pa-y4 {
-        padding: 2rem 0;
-    }
-
-    .pickup-box {
-        padding: 0;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .pickup-box div {
-        padding-left: 0;
-        margin-left: 0;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-
-        p {
-            margin: 1rem 0;
-            font-size: 1.2rem;
-        }
-
-        h6 {
-            margin-left: 0;
-            font-size: 1rem;
-        }
-    }
-
-    .pickup-box span {
-        font-size: 1.4rem;
-    }
-
-    .about-txt {
-        h2 {
-            font-size: 2.5rem;
-        }
-
-        h5 {
-            font-size: 1.2rem;
-        }
-    }
-
-    .common-heading {
-        margin-bottom: 1rem;
-
-        h2 {
-            font-size: 2.5rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-    }
-
-    .about-txt {
-        margin-top: 2rem;
-
-        .para {
-            margin: 0;
-            margin-top: 2rem;
-
-            h6 {
-                font-size: 1.2rem;
-                margin-bottom: 1rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-
-        .text-md-end {
-            text-align: end;
-        }
-    }
-
-    .ordr_1 {
-        order: 1;
-    }
-
-    .ordr_2 {
-        order: 2;
-    }
-
-    .services-txt {
-        margin-top: 2rem;
-
-        h5 {
-            font-size: 1.1rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-        }
-    }
-
-    .custom-margin-top-serv {
-        margin-top: 3rem;
-    }
-
-    .feedback-section .feedback-head h5 {
-        font-size: 1.5rem;
-    }
-
-    .feedback-section .feedback-carousel .feedback-txt-box {
-        margin: 0 1rem;
-        padding: 1rem;
-
-        .media {
-            flex-direction: column;
-            justify-content: center;
-
-            .avatar {
-                width: 100%;
-                margin-bottom: 1rem;
-
-                span {
-                    font-size: 1rem;
-                }
-
-                h6 {
-                    font-size: 1.2rem;
-                }
-            }
-
-            .media-body {
-
-                h5 {
-                    font-size: 1.2rem;
-                    text-align: center;
-                }
-
-                p {
-                    font-size: 1rem;
-                }
-            }
-        }
-
-    }
-
-    .post-section .post-box {
-        margin-bottom: 2rem;
-
-        .txt {
-            h4 {
-                font-size: 1.2rem;
-            }
-        }
-    }
-
-    .news-section .news-txt-box {
-        .media .media-body {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        img {
-            width: 7rem;
-            margin-right: 1rem;
-        }
-
-        p {
-            margin-left: 0;
-            font-size: 1rem;
-        }
-
-        h6 {
-            font-size: 1rem;
-            margin-right: 1rem;
-        }
-    }
-
-    .get-start-box {
-        padding: 4rem 1rem;
-
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        h6 {
-            font-size: 1.1rem;
-            margin: .5rem 0;
-        }
-
-        .bttns {
-            margin-top: 3rem;
-
-            a {
-                display: block;
-                width: 100%;
-                text-align: center;
-                margin-top: 1rem;
-                font-size: 0.9rem;
-
-                i {
-                    padding-left: 0.5rem;
-                }
-            }
-        }
-    }
-
-    .ftr-logo {
-        text-align: center;
-        margin-bottom: 2rem;
-
-        a {
-            margin-top: 1rem;
-
-            img {
-                width: 17rem;
-            }
-        }
-    }
-
-    .footer-section .ftr-menu {
-        margin: 3rem 0;
-
-        ul {
-            flex-direction: column;
-
-            li {
-                a {
-                    margin-bottom: 1rem;
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
-
-    .footer-section .ftr-copy {
-        padding: 2rem 0;
-        padding-bottom: 1rem;
-
-        p {
-            font-size: 1rem;
-        }
-    }
-
-     // vision css start
-     .vision-hero-section .hero-ol{
-        padding: 4rem 0;
-        margin-top: -1rem;
-    } 
-    .vision-about-section { 
-       background-image: none;
-       margin-top: 1rem;
-    }
-    .about-txt .para p{
-        margin-bottom: 0;
-    }
-    .value-box-wrap{
-        flex-direction: column;
-    }
-    .value-box-wrap .custom-margin {
-        margin: -2.5rem 0;
-    }
-    .team-person-box{
+    .team-person-box {
         width: 75%;
     }
 
     .company-section .company-title {
         margin-bottom: 3rem;
-        h2{
+
+        h2 {
             font-size: 2.5rem;
         }
-        h5{
-            font-size: 1.2rem;
-        }
-    } 
-    .company-section .company-table-list .d-flex {
-        h6{
-            font-size: 1.2rem;
-            margin-right: 0.5rem;
-        }
-        h5{
+
+        h5 {
             font-size: 1.2rem;
         }
     }
-    .custom-margin-top{
+
+    .company-section .company-table-list .d-flex {
+        h6 {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .custom-margin-top {
         margin-top: 3rem;
+    }
+
+    .about-txt .text-md-end {
+        margin-top: 1rem;
     }
 }
 
@@ -740,6 +799,10 @@
         display: none;
     }
 
+    .hero-section {
+        margin-top: 66px;
+    }
+
     .hero-txt-wrap {
         h3 {
             font-size: 3rem;
@@ -761,14 +824,14 @@
     .pickup-box div {
         padding-left: 0;
         margin-left: 0;
-        width: 100%; 
+        width: 100%;
 
         p {
             margin: 1rem 0;
             font-size: 1.2rem;
         }
 
-        h6 { 
+        h6 {
             font-size: 1rem;
         }
     }
@@ -776,7 +839,8 @@
     .pickup-box span {
         font-size: 1.8rem;
     }
-    .pa-y4{
+
+    .pa-y4 {
         padding: 3rem 0;
     }
 
@@ -831,6 +895,7 @@
     .ordr_2 {
         order: 2;
     }
+
     .services-txt {
         margin-top: 2rem;
 
@@ -842,6 +907,7 @@
             font-size: 1.2rem;
         }
     }
+
     .get-start-box {
         padding: 4rem 1rem;
 
@@ -859,12 +925,13 @@
             margin-top: 3rem;
             display: flex;
             align-items: center;
-           justify-content: center;
-           a{ 
-            i{
-                padding-left: 1rem;
+            justify-content: center;
+
+            a {
+                i {
+                    padding-left: 1rem;
+                }
             }
-           }
         }
     }
 
@@ -886,8 +953,9 @@
 
         ul {
             justify-content: center;
+
             li {
-                a { 
+                a {
                     font-size: 1rem;
                 }
             }
@@ -904,54 +972,71 @@
     }
 
     // vision css start
-    .vision-hero-section .hero-ol{
+    .vision-hero-section .hero-ol {
         padding: 4rem 0;
         margin-top: -1rem;
-    } 
-    .vision-about-section { 
-       background-size: 40%;
+    }
+
+    .vision-about-section {
+        background-size: 40%;
         margin-top: 2rem;
-     }
-     .about-txt .para p{
+    }
+
+    .about-txt .para p {
         margin-bottom: 0;
-     }
-     .value-box-wrap .value-txt-item { 
+    }
+
+    .value-box-wrap .value-txt-item {
         width: 266px;
-        height: 246px; 
+        height: 246px;
         overflow: hidden;
     }
-    .value-box-wrap .value-txt-item h6{
+
+    .value-box-wrap .value-txt-item h6 {
         font-size: 1.2rem;
     }
-    .value-box-wrap .value-txt-item p{
+
+    .value-box-wrap .value-txt-item p {
         font-size: 1rem;
     }
-    .value-box-wrap .custom-margin{
+
+    .value-box-wrap .custom-margin {
         margin: 0;
     }
-    .team-person-box{
+
+    .team-person-box {
         width: 90%;
     }
+
     .company-section .company-title {
         margin-bottom: 3rem;
-        h2{
+
+        h2 {
             font-size: 3rem;
         }
-        h5{
+
+        h5 {
             font-size: 1.5rem;
         }
-    } 
+    }
+
     .company-section .company-table-list .d-flex {
-        h6{
+        h6 {
             font-size: 1.2rem;
             margin-right: 0.5rem;
         }
-        h5{
+
+        h5 {
             font-size: 1.2rem;
         }
     }
-    .custom-margin-top{
+
+    .custom-margin-top {
         margin-top: 3rem;
+    }
+
+    .about-txt .text-md-end {
+        margin-top: 1rem;
     }
 }
 
@@ -993,21 +1078,34 @@
         }
     }
 
+    .hero-section {
+        margin-top: 66px;
+    }
+
+    .about-txt .text-md-end {
+        margin-top: 1rem;
+    }
+
     br {
         display: none;
     }
-    .pa-y4{
+
+    .pa-y4 {
         padding: 4rem 0;
     }
-    .pickup-box{
+
+    .pickup-box {
         padding: 0;
     }
-    .pickup-box div{
+
+    .pickup-box div {
         margin-left: 1rem;
     }
-    .pickup-box div h6{
+
+    .pickup-box div h6 {
         font-size: 1.2rem;
     }
+
     .about-txt {
         h2 {
             font-size: 3rem;
@@ -1029,10 +1127,12 @@
             font-size: 1.5rem;
         }
     }
-    .about-txt .para h6{
+
+    .about-txt .para h6 {
         font-size: 1.5rem;
     }
-    .about-txt .para p{
+
+    .about-txt .para p {
         font-size: 1rem;
     }
 
@@ -1047,29 +1147,35 @@
             font-size: 1.4rem;
         }
     }
-    .footer-section .ftr-menu ul li a{
+
+    .footer-section .ftr-menu ul li a {
         font-size: 1rem;
     }
-    .footer-section .ftr-logo p{
+
+    .footer-section .ftr-logo p {
         font-size: 0.9rem;
     }
 
     // vision css start
-    .vision-hero-section{
+    .vision-hero-section {
         margin-top: 72px;
     }
-    .team-person-box{
+
+    .team-person-box {
         width: 90%;
     }
-    .company-section .company-title { 
-        h2{
+
+    .company-section .company-title {
+        h2 {
             font-size: 4rem;
         }
-        h5{
+
+        h5 {
             font-size: 1.5rem;
         }
-    } 
-    .company-section{
+    }
+
+    .company-section {
         padding-bottom: 16rem;
     }
 }
@@ -1077,10 +1183,11 @@
 // regular device 
 @include q.responsive(regular) {
     .header-section .navbar-nav .nav-item .nav-link {
-        margin: 0; 
+        margin: 0;
         margin-left: 0.5rem;
         font-size: 1rem;
     }
+
     .about-txt {
         h2 {
             font-size: 4rem;
@@ -1102,12 +1209,15 @@
             font-size: 1.5rem;
         }
     }
-    .about-txt .para h6{
+
+    .about-txt .para h6 {
         font-size: 1.5rem;
     }
-    .about-txt .para p{
+
+    .about-txt .para p {
         font-size: 1.2rem;
     }
+
     .services-txt {
         margin-top: 2rem;
 
@@ -1119,10 +1229,12 @@
             font-size: 1.2rem;
         }
     }
-    .footer-section .ftr-menu ul li a{
+
+    .footer-section .ftr-menu ul li a {
         font-size: 1.2rem;
     }
-    .company-section .company-title h2{
+
+    .company-section .company-title h2 {
         font-size: 4rem;
     }
 }

@@ -27,16 +27,38 @@
   .header-section .d-flex a:first-child {
     margin-right: 1rem;
   }
+  .hero-section {
+    margin-top: 66px;
+    background-image: none;
+    position: relative;
+    background-image: url("../images/mobile-hero.png");
+  }
+  .hero-section .hero-ol {
+    background-image: url("../images/mobile-ol.svg");
+  }
   br {
     display: none;
+  }
+  .hero-txt-wrap {
+    margin: 5rem 0;
   }
   .hero-txt-wrap h3 {
     font-size: 2rem;
     line-height: 140%;
   }
   .hero-txt-wrap h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 140%;
+  }
+  .hero-txt-wrap h5 {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+  }
+  .hero-txt-wrap .hero-bttn {
+    position: absolute;
+    left: 4%;
+    bottom: 0;
+    width: 92%;
   }
   .hero-bttn a {
     display: block;
@@ -51,6 +73,7 @@
   }
   .pickup-box {
     padding: 0;
+    padding-top: 3rem;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -263,6 +286,9 @@
   .custom-margin-top {
     margin-top: 3rem;
   }
+  .about-txt .text-md-end {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 575px) and (max-width: 767px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -293,6 +319,9 @@
   .header-section .d-flex a:first-child {
     margin-right: 1rem;
   }
+  .hero-section {
+    margin-top: 66px;
+  }
   br {
     display: none;
   }
@@ -307,6 +336,7 @@
   .hero-bttn a {
     display: block;
     width: 100%;
+    text-align: center;
   }
   .scroll-down {
     display: none;
@@ -528,6 +558,9 @@
   .custom-margin-top {
     margin-top: 3rem;
   }
+  .about-txt .text-md-end {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -560,6 +593,9 @@
   }
   br {
     display: none;
+  }
+  .hero-section {
+    margin-top: 66px;
   }
   .hero-txt-wrap h3 {
     font-size: 3rem;
@@ -732,6 +768,9 @@
   .custom-margin-top {
     margin-top: 3rem;
   }
+  .about-txt .text-md-end {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -761,6 +800,12 @@
   }
   .header-section .d-flex a:first-child {
     margin-right: 1rem;
+  }
+  .hero-section {
+    margin-top: 66px;
+  }
+  .about-txt .text-md-end {
+    margin-top: 1rem;
   }
   br {
     display: none;

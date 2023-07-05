@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="620" viewBox="0 0 390 620">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.417" x2="-0.01" y2="0.425" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#055394"/>
+      <stop offset="1" stop-color="#055394" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <path id="Placement_Area" data-name="Placement Area" d="M0,0H390V522.368L0,620Z" fill="url(#linear-gradient)"/>
+</svg>
