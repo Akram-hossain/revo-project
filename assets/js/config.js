@@ -21,7 +21,7 @@ $(document).ready(function () {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          centerPadding: '50px',
+          centerPadding: '0px',
         }
       }
     ]

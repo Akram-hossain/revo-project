@@ -102,24 +102,27 @@ $base4: v.$base4;
     }
 }
 
-.vision-hero-section{
-    @include m.bgi('../images/vision-hero-bg.jpg'); 
+.vision-hero-section {
+    @include m.bgi('../images/vision-hero-bg.jpg');
+
     .hero-ol {
-        padding: 10rem 0; 
-        background: rgb(5, 83, 148);
-        background: linear-gradient(90deg, rgba(5, 83, 148, 0.9) 0%, rgba(116, 180, 217, 0.9) 100%);
-    }
-}
-.services-hero-section{
-    @include m.bgi('../images/vision-hero-bg.jpg'); 
-    .hero-ol {
-        padding: 10rem 0; 
+        padding: 10rem 0;
         background: rgb(5, 83, 148);
         background: linear-gradient(90deg, rgba(5, 83, 148, 0.9) 0%, rgba(116, 180, 217, 0.9) 100%);
     }
 }
 
-.hero-txt-wrap { 
+.services-hero-section {
+    @include m.bgi('../images/vision-hero-bg.jpg');
+
+    .hero-ol {
+        padding: 10rem 0;
+        background: rgb(5, 83, 148);
+        background: linear-gradient(90deg, rgba(5, 83, 148, 0.9) 0%, rgba(116, 180, 217, 0.9) 100%);
+    }
+}
+
+.hero-txt-wrap {
     text-align: end;
 
     h5 {
@@ -152,7 +155,8 @@ $base4: v.$base4;
         position: relative;
         top: -1rem;
         z-index: 99;
-        cursor: pointer; 
+        cursor: pointer;
+
         a {
             position: absolute;
             left: 0;
@@ -160,7 +164,8 @@ $base4: v.$base4;
             @include m.para(0.9rem, 400, $light);
             z-index: 99;
         }
-        img{
+
+        img {
             position: absolute;
             left: 0.2rem;
             z-index: 99;
@@ -222,16 +227,16 @@ $base4: v.$base4;
     }
 }
 
-.vision-about-section{
-    @include m.bgi('../images/vision-bg.png'); 
+.vision-about-section {
+    @include m.bgi('../images/vision-bg.png');
     background-size: 50%;
     background-repeat: no-repeat;
-    background-position: center right; 
+    background-position: center right;
     margin-top: 6rem;
 }
 
-.mission-img{
-    img{
+.mission-img {
+    img {
         width: 80%;
         border-radius: 1rem
     }
@@ -318,15 +323,16 @@ $base4: v.$base4;
     }
 }
 
-.services-main-section{
+.services-main-section {
     .services-txt {
         h5 {
-           color: $primary
+            color: $primary
         }
 
         h6 {
             color: $primary;
-            &:before { 
+
+            &:before {
                 background-color: $primary;
             }
         }
@@ -336,22 +342,25 @@ $base4: v.$base4;
             opacity: 0.7;
         }
     }
-    .services-optional-title{ 
-        h4{
+
+    .services-optional-title {
+        h4 {
             @include m.para(2rem, 700, $primary);
         }
     }
 }
 
 /* services text bg css */
-.services-bloock-bg{
+.services-bloock-bg {
     position: relative;
+
     .services-txt {
-        p{
+        p {
             color: $light;
         }
     }
-    &:before{
+
+    &:before {
         position: absolute;
         content: "";
         right: 0;
@@ -365,14 +374,16 @@ $base4: v.$base4;
     }
 }
 
-.services-bloock-bg-2{
+.services-bloock-bg-2 {
     position: relative;
+
     .services-txt {
-        p{
+        p {
             color: $light;
         }
     }
-    &:before{
+
+    &:before {
         position: absolute;
         content: "";
         left: 0;
@@ -386,7 +397,7 @@ $base4: v.$base4;
     }
 }
 
-.custom-margin-top-serv{
+.custom-margin-top-serv {
     margin-top: 7rem;
 }
 
@@ -403,43 +414,50 @@ $base4: v.$base4;
     }
 
     .feedback-carousel {
-        .feedback-txt-box { 
-            @include m.box(1rem,1rem,$light);
+        .feedback-txt-box {
+            @include m.box(1rem, 1rem, $light);
             padding-right: 0;
             padding-left: 0.4rem;
             // max-width: 40%;
             margin: 0 2rem;
-            .media{
+
+            .media {
                 align-items: flex-start;
-                .avatar{
+
+                .avatar {
                     text-align: center;
                     margin-right: 1rem;
-                    img{
+
+                    img {
                         width: 9rem;
                         height: 9rem;
                         margin: 0 auto;
                         display: block;
                     }
-                    span{
+
+                    span {
                         display: block;
                         @include m.para(1.15rem, 500, $base2);
                         margin: .9rem 0;
                         opacity: 0.8;
                     }
-                    h6{ 
+
+                    h6 {
                         @include m.para(1.5rem, 500, $base2);
                         opacity: 0.8;
                     }
                 }
-                .media-body{
-                    h5{
+
+                .media-body {
+                    h5 {
                         background: rgb(5, 83, 148);
                         background: linear-gradient(90deg, rgba(5, 83, 148, 1) 0%, rgba(116, 180, 217, 1) 100%);
                         @include m.para(1.5rem, 700, $light);
                         padding: .5rem .1rem;
                         padding-left: 1rem;
                     }
-                    p{
+
+                    p {
                         @include m.para(1.5rem, 500, $base2);
                         opacity: 0.7;
                         margin-top: 1rem;
@@ -451,9 +469,10 @@ $base4: v.$base4;
     }
 }
 
-.services-feedback-section{
+.services-feedback-section {
     background-color: $light;
-    .feedback-head { 
+
+    .feedback-head {
 
         h5 {
             color: $primary;
@@ -461,26 +480,29 @@ $base4: v.$base4;
     }
 
     .feedback-carousel {
-        .feedback-txt-box { 
-             background-color: $base3;
-          
+        .feedback-txt-box {
+            background-color: $base3;
+
         }
 
     }
 }
 
 // post css start 
-.post-section{
+.post-section {
     background-color: $primary;
-    .post-box{
-        position: relative; 
-        .thumbnail{
-            img{
+
+    .post-box {
+        position: relative;
+
+        .thumbnail {
+            img {
                 display: block;
                 width: 100%;
             }
         }
-        .txt{
+
+        .txt {
             position: absolute;
             left: 0;
             top: 0;
@@ -489,12 +511,15 @@ $base4: v.$base4;
             @include m.df(space-between);
             flex-direction: column;
             padding: 1rem;
-            h4{
+
+            h4 {
                 @include m.para(2rem, 700, $light);
             }
-            a{
+
+            a {
                 padding-left: 3rem;
-                i{
+
+                i {
                     padding-left: 1rem;
                 }
             }
@@ -502,43 +527,66 @@ $base4: v.$base4;
     }
 }
 
-.news-section{
+.news-section {
 
-    .news-txt-box{
+    .news-txt-box {
         @include m.df;
         border-top: 2px solid $base2;
         padding-top: 0.5rem;
         margin-top: 0.5rem;
-        img{
+        .media{
+            align-items: center;
+            width: 100%;
+            .media-body{
+                display: flex;
+                align-items: center;
+            }
+            a{
+                margin-left: auto;
+            }
+        }
+
+        img {
             width: 10rem;
             border-radius: 0.675rem;
         }
-        p{
+
+        p {
             @include m.para(1.15rem, 400, $base2);
             margin: 0 2rem;
         }
-        h6{
-            @include m.para(1.5rem, 700, $base2); 
+
+        h6 {
+            @include m.para(1.5rem, 700, $base2);
         }
-        a{
+
+        a {
             margin-left: auto;
         }
-        &:hover{
-            p,h6,a{
+
+        &:hover {
+
+            p,
+            h6,
+            a {
                 color: $primary;
             }
         }
-        
+
     }
-    .brdr-btm{
+
+    .brdr-btm {
         border-bottom: 2px solid $base2;
         padding-bottom: 0.5rem;
     }
-    .text-center{
+
+    .text-center {
         margin-top: 4rem;
-        a{
+
+        a {
             padding-left: 4rem;
-            i{
+
+            i {
                 padding-left: 1rem;
             }
         }
@@ -546,155 +594,182 @@ $base4: v.$base4;
 }
 
 // get start css
-.get-start-bg{
+.get-start-bg {
     @include m.bgi('../images/get-bg.png');
     background-size: contain;
     background-position: center left;
 }
-.get-start-box{ 
+
+.get-start-box {
     padding: 4rem 3rem;
-    text-align: center; 
+    text-align: center;
     background: rgb(5, 83, 148);
     background: linear-gradient(90deg, rgba(5, 83, 148, 1) 0%, rgba(116, 180, 217, 1) 100%);
     border-radius: 1rem;
-    h3{
-        @include m.para(3.5rem, 700, $light); 
+
+    h3 {
+        @include m.para(3.5rem, 700, $light);
     }
-    h6{
-        @include m.para(1.5rem, 500, $light); 
+
+    h6 {
+        @include m.para(1.5rem, 500, $light);
         opacity: .8;
         margin: 2rem 0;
     }
-    .bttns{
-        a{
+
+    .bttns {
+        a {
             border: 1px solid $light;
-            i{
+
+            i {
                 padding-left: 3rem;
             }
         }
     }
 }
 
-.footer-section{
+.footer-section {
     padding-top: 3rem;
-    .ftr-logo{
-        p{
-            @include m.para(1.15rem, 700, $primary); 
+
+    .ftr-logo {
+        p {
+            @include m.para(1.15rem, 700, $primary);
         }
-        a{
+
+        a {
             display: block;
         }
     }
-    .ftr-menu{
-       ul{
-        @include m.df(flex-end);
-        li{
-            a{
-                display: block;
-                @include m.para(1.5rem, 700, $base2); 
-                margin-left: 1rem;
+
+    .ftr-menu {
+        ul {
+            @include m.df(flex-end);
+
+            li {
+                a {
+                    display: block;
+                    @include m.para(1.5rem, 700, $base2);
+                    margin-left: 1rem;
+                }
             }
         }
-       }
     }
-    .ftr-copy{
+
+    .ftr-copy {
         text-align: center;
         padding-bottom: 2rem;
         padding-top: 4rem;
-        p{
-            @include m.para(1.15rem, 500, $base2); 
+
+        p {
+            @include m.para(1.15rem, 500, $base2);
         }
     }
 }
 
 // vision css @s
-.value-box-wrap{
+.value-box-wrap {
     @include m.df(center);
-    .value-txt-item{
+
+    .value-txt-item {
         border: 2px solid $primary;
         width: 360px;
         height: 360px;
         @include m.df(center);
         flex-direction: column;
         border-radius: 50%;
-        h5{
+
+        h5 {
             @include m.para(1.5rem, 700, $primary);
-            margin-bottom: 3rem; 
+            margin-bottom: 3rem;
         }
-        h6{
+
+        h6 {
             @include m.para(1.5rem, 700, $base4);
-            margin-bottom: 2rem; 
+            margin-bottom: 2rem;
         }
-        p{
-            @include m.para(1.5rem, 500, $base2); 
+
+        p {
+            @include m.para(1.5rem, 500, $base2);
             text-align: center;
         }
     }
-    .custom-margin{
+
+    .custom-margin {
         margin: 0 -2.5rem;
     }
 }
 
 // team css start
-.team-person-box{
+.team-person-box {
     text-align: center;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 2rem;
-    .thumbnail{
-        img{
+
+    .thumbnail {
+        img {
             display: block;
             width: 100%;
             border-radius: 1rem;
         }
     }
-    .txt{
-        h5{
+
+    .txt {
+        h5 {
             @include m.para(1.5rem, 700, $base4);
             margin-top: 0.5rem;
             margin-bottom: 1rem;
         }
-        h6{
+
+        h6 {
             @include m.para(2rem, 700, $base4);
             margin-bottom: 1rem;
         }
-        p{
+
+        p {
             @include m.para(1.1rem, 500, $base2);
             text-align: left;
         }
     }
 }
+
 // team css end
 
-.custom-margin-top{
+.custom-margin-top {
     margin-top: -12rem;
 }
 
-.company-section{
+.company-section {
     background-color: $primary;
     padding-bottom: 20rem;
-    .company-title{
-        h2{
+
+    .company-title {
+        h2 {
             @include m.para(5rem, 700, $light);
         }
-        h5{
+
+        h5 {
             @include m.para(2rem, 700, $light);
         }
     }
-    .company-table-list{
-        .d-flex{
+
+    .company-table-list {
+        .d-flex {
             padding: 1.5rem .5rem;
             border-top: 1px solid $base1;
-            h6{
+
+            h6 {
                 @include m.para(1.5rem, 500, $base1);
                 opacity: .8;
                 margin-right: 2rem;
                 min-width: 100px
             }
-            h5{
+
+            h5 {
                 @include m.para(1.5rem, 700, $base1);
             }
-            &:last-child{
+
+            &:last-child {
                 border-bottom: 1px solid $base1;
             }
         }
@@ -702,20 +777,22 @@ $base4: v.$base4;
 }
 
 // services area
-.services-header-area{
+.services-header-area {
     margin-top: 2rem;
-    h4{
+
+    h4 {
         @include m.para(1.5rem, 700, $base4);
         border-bottom: 2px solid $base4;
         padding-bottom: 0.5rem;
-        span{
+
+        span {
             margin-left: 4rem;
             font-weight: 400;
         }
     }
 }
 
-.services-area-box{
+.services-area-box {
     width: 100%;
     height: 6rem;
     background-color: $base3;
@@ -723,121 +800,122 @@ $base4: v.$base4;
 }
 
 /* news css start */
-.news-main-section{
-    .news-post-box{
+.news-main-section {
+    .news-post-box {
         margin-top: 4rem;
-        .thumbnail{
-            img{
+
+        .thumbnail {
+            img {
                 display: block;
                 width: 100%;
                 border-radius: 1rem;
             }
         }
-        .txt{
+
+        .txt {
             margin-top: 1rem;
-            h5{
+
+            h5 {
                 @include m.para(1.5rem, 400, $base4);
                 margin-bottom: 1rem;
             }
-            p{
-                @include m.para(1.2rem, 400, $base4); 
+
+            p {
+                @include m.para(1.2rem, 400, $base4);
             }
         }
     }
 }
+
 /* news css end */
 
 /* contact css start */
-.contact-hero-section{
+.contact-hero-section {
     @include m.bgi('../images/contact-hero-bg.png');
     padding: 10rem 0;
 }
 
-.contact-form-box{
-    h4{
+.contact-form-box {
+    h4 {
         @include m.para(1.5rem, 700, $base2);
     }
-    .custom-brdr{
+
+    .custom-brdr {
         border-top: 1.5px solid $base4;
         padding-top: 1rem;
         margin-top: 1rem;
         align-items: center;
     }
-    .form-group{
+
+    .form-group {
         position: relative;
-        label{
-            @include m.para(1.5rem, 500, $base2); 
+
+        label {
+            @include m.para(1.5rem, 500, $base2);
         }
-        .form-control{
-            @include m.para(1.2rem, 700, $base2); 
-            border: 0; 
+
+        .form-control {
+            @include m.para(1.2rem, 700, $base2);
+            border: 0;
         }
-        i{
+
+        i {
             position: absolute;
             right: 0;
             top: 0;
             font-size: 2rem;
         }
-        textarea{
-            border: 1px solid $base2!important;
+
+        textarea {
+            border: 1px solid $base2 !important;
             border-radius: 1rem;
             resize: none;
         }
     }
-  
+
 }
- 
+
 /* contact css end */
 
 /* news details css start */
-.news-details-title{
+.news-details-title {
     margin-bottom: 2rem;
-    h1{
-        @include m.para(1.5rem, 500, $base2); 
+
+    h1 {
+        @include m.para(1.5rem, 500, $base2);
     }
 }
-.news-details-box{
-    h6{
-        @include m.para(1.5rem, 700, $base4); 
+
+.news-details-box {
+    h6 {
+        @include m.para(1.5rem, 700, $base4);
         margin-bottom: 1rem;
     }
-    h4{
-        @include m.para(2rem, 700, $base4); 
+
+    h4 {
+        @include m.para(2rem, 700, $base4);
         margin-bottom: 2rem;
     }
-    p{
-        @include m.para(1.5rem, 500, $base2);  
+
+    p {
+        @include m.para(1.5rem, 500, $base2);
         margin-bottom: 1.5rem;
     }
-    img{
+
+    img {
         display: block;
         width: 100%;
         margin-bottom: 2rem;
     }
 }
+
 /* news details css end */
 
 
 
-
-
-@media (min-width: 1980px) {
+// custom container width
+@media (min-width: 1950px) {
     .container {
-        max-width: 1920px!important; 
+        max-width: 1920px !important;
     }
-  }
-
-
-
-
-// ======= responsive css @s
-// small phone device
-@include q.responsive(phone) {}
-
-// landscape phone device 
-@include q.responsive(landphone) {}
-
-// tablet device 
-@include q.responsive(tablet) {}
-
-// ======= responsive css @e
+}

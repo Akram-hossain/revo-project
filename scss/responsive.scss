@@ -3,7 +3,250 @@
 
 // small phone device
 @include q.responsive(phone){
-    
+    .header-section .navbar-nav .nav-item .nav-link{
+        margin: 0;
+        margin-bottom: 1rem;
+        text-align: center; 
+    } 
+    .header-section { 
+        padding-bottom: 1rem;
+        .navbar-brand{
+            width: 120px;
+            padding: 0;
+        } 
+        .fa-bars{
+            font-size: 1.7rem;
+            color: v.$primary;
+        }
+        .navbar-toggler{
+            border: 0;
+        }
+        .d-flex{
+            justify-content: center;
+            a{
+                font-size: 0.9rem;
+                &:first-child{
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    .hero-section{
+         
+    } 
+    br{
+        display: none;
+    }
+    .hero-txt-wrap{ 
+        h3{
+            font-size: 2rem;
+            line-height: 140%;
+        }
+        h1{
+            font-size: 3rem;
+            line-height: 140%;
+        } 
+    } 
+    .hero-bttn a{
+        display: block;
+        width: 100%;
+    }
+    .scroll-down{
+        display: none;
+        height: 0;
+    }
+    .pa-y4{
+        padding: 2rem 0;
+    }
+    .pickup-box{
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pickup-box div{
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+        h6{
+            margin-left: 0;
+            font-size: 1rem;
+        }
+    }
+    .pickup-box span{
+        font-size: 1.4rem;
+    }
+    .about-txt {
+        h2{
+            font-size: 2.5rem;
+        }
+        h5{
+            font-size: 1.2rem;  
+        }
+    }
+    .common-heading{
+        margin-bottom: 1rem;
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    .about-txt {
+        margin-top: 2rem;
+        .para{
+            margin: 0;
+            margin-top: 2rem;
+            h6{
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .text-md-end{
+            text-align: end;
+        }
+    }
+    .ordr_1{
+        order: 1;
+    }
+    .ordr_2{
+        order: 2;
+    }
+    .services-txt {
+        margin-top: 2rem;
+        h5{
+            font-size: 1.1rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    .custom-margin-top-serv{
+        margin-top: 3rem;
+    }
+
+    .feedback-section .feedback-head h5{
+        font-size: 1.5rem;
+    }
+    .feedback-section .feedback-carousel .feedback-txt-box {
+        margin: 0 1rem;
+        padding: 1rem;
+        .media{
+            flex-direction: column;
+            justify-content: center;
+            .avatar{
+                width: 100%;
+                margin-bottom: 1rem;
+                span{
+                    font-size: 1rem;
+                }
+                h6{
+                    font-size: 1.2rem;
+                }
+            }
+            .media-body {
+               
+                h5{
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+    }
+
+    .post-section .post-box {
+        margin-bottom: 2rem;
+        .txt{
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .news-section .news-txt-box {
+        .media .media-body{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        img{
+            width: 7rem;
+            margin-right: 1rem;
+        }
+        p{
+           margin-left: 0;
+           font-size: 1rem;
+        }
+        h6{
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+    }
+    .get-start-box{
+        padding: 4rem 1rem;
+        h3{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        h6{
+            font-size: 1.1rem;
+            margin: .5rem 0;
+        }
+        .bttns{
+            margin-top: 3rem;
+            a{
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                i{
+                    padding-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .ftr-logo{
+        text-align: center;
+        margin-bottom: 2rem;
+        a{
+            margin-top: 1rem;
+            img{
+                width: 17rem;
+            }
+        }
+    }
+    .footer-section .ftr-menu {
+        margin: 3rem 0;
+        ul{
+            flex-direction: column;
+            li{
+                a{
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .footer-section .ftr-copy{
+        padding: 2rem 0;
+        padding-bottom: 1rem;
+        p{
+            font-size: 1rem;
+        }
+    }
 }
 
 // landscape phone device 
