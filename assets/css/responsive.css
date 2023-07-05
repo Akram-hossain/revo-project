@@ -303,6 +303,25 @@
   .services-bloock-bg .services-txt p {
     color: #333333;
   }
+  .contact-form-box .form-group label {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .contact-form-box .form-group .form-control {
+    font-size: 1rem;
+  }
+  .contact-hero-section {
+    padding: 4rem 0;
+  }
+  .news-details-title h1 {
+    font-size: 1.2rem;
+  }
+  .news-details-box h4 {
+    font-size: 1.5rem;
+  }
+  .news-details-box p {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 575px) and (max-width: 767px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -574,6 +593,25 @@
   }
   .about-txt .text-md-end {
     margin-top: 1rem;
+  }
+  .contact-form-box .form-group label {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .contact-form-box .form-group .form-control {
+    font-size: 1rem;
+  }
+  .contact-hero-section {
+    padding: 4rem 0;
+  }
+  .news-details-title h1 {
+    font-size: 1.2rem;
+  }
+  .news-details-box h4 {
+    font-size: 1.5rem;
+  }
+  .news-details-box p {
+    font-size: 1rem;
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {

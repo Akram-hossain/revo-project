@@ -404,6 +404,30 @@
     .services-bloock-bg .services-txt p{
         color: v.$base4;
     }
+
+    // contact css start
+    .contact-form-box .form-group{
+        label{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .form-control{
+            font-size: 1rem;
+        }
+    }
+    .contact-hero-section{
+        padding: 4rem 0;
+    }
+    // news css start
+    .news-details-title h1{
+        font-size: 1.2rem;
+    }
+    .news-details-box h4{
+        font-size: 1.5rem;
+    }
+    .news-details-box p{
+        font-size: 1rem;
+    }
     
 }
 
@@ -771,6 +795,29 @@
 
     .about-txt .text-md-end {
         margin-top: 1rem;
+    }
+     // contact css start
+     .contact-form-box .form-group{
+        label{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .form-control{
+            font-size: 1rem;
+        }
+    }
+    .contact-hero-section{
+        padding: 4rem 0;
+    }
+     // news css start
+     .news-details-title h1{
+        font-size: 1.2rem;
+    }
+    .news-details-box h4{
+        font-size: 1.5rem;
+    }
+    .news-details-box p{
+        font-size: 1rem;
     }
 }
 
