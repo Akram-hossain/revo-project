@@ -722,8 +722,100 @@ $base4: v.$base4;
     margin-top: 1.5rem;
 }
 
+/* news css start */
+.news-main-section{
+    .news-post-box{
+        margin-top: 4rem;
+        .thumbnail{
+            img{
+                display: block;
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+        .txt{
+            margin-top: 1rem;
+            h5{
+                @include m.para(1.5rem, 400, $base4);
+                margin-bottom: 1rem;
+            }
+            p{
+                @include m.para(1.2rem, 400, $base4); 
+            }
+        }
+    }
+}
+/* news css end */
 
+/* contact css start */
+.contact-hero-section{
+    @include m.bgi('../images/contact-hero-bg.png');
+    padding: 10rem 0;
+}
 
+.contact-form-box{
+    h4{
+        @include m.para(1.5rem, 700, $base2);
+    }
+    .custom-brdr{
+        border-top: 1.5px solid $base4;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .form-group{
+        position: relative;
+        label{
+            @include m.para(1.5rem, 500, $base2); 
+        }
+        .form-control{
+            @include m.para(1.2rem, 700, $base2); 
+            border: 0; 
+        }
+        i{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 2rem;
+        }
+        textarea{
+            border: 1px solid $base2!important;
+            border-radius: 1rem;
+            resize: none;
+        }
+    }
+  
+}
+ 
+/* contact css end */
+
+/* news details css start */
+.news-details-title{
+    margin-bottom: 2rem;
+    h1{
+        @include m.para(1.5rem, 500, $base2); 
+    }
+}
+.news-details-box{
+    h6{
+        @include m.para(1.5rem, 700, $base4); 
+        margin-bottom: 1rem;
+    }
+    h4{
+        @include m.para(2rem, 700, $base4); 
+        margin-bottom: 2rem;
+    }
+    p{
+        @include m.para(1.5rem, 500, $base2);  
+        margin-bottom: 1.5rem;
+    }
+    img{
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+/* news details css end */
 
 
 

@@ -929,6 +929,122 @@ body {
   margin-top: 1.5rem;
 }
 
+/* news css start */
+.news-main-section .news-post-box {
+  margin-top: 4rem;
+}
+.news-main-section .news-post-box .thumbnail img {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+}
+.news-main-section .news-post-box .txt {
+  margin-top: 1rem;
+}
+.news-main-section .news-post-box .txt h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+.news-main-section .news-post-box .txt p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 140%;
+}
+
+/* news css end */
+/* contact css start */
+.contact-hero-section {
+  background-image: url("../images/contact-hero-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
+}
+
+.contact-form-box h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #272727;
+  line-height: 140%;
+}
+.contact-form-box .custom-brdr {
+  border-top: 1.5px solid #333333;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+.contact-form-box .form-group {
+  position: relative;
+}
+.contact-form-box .form-group label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #272727;
+  line-height: 140%;
+}
+.contact-form-box .form-group .form-control {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #272727;
+  line-height: 140%;
+  border: 0;
+}
+.contact-form-box .form-group i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+}
+.contact-form-box .form-group textarea {
+  border: 1px solid #272727 !important;
+  border-radius: 1rem;
+  resize: none;
+}
+
+/* contact css end */
+/* news details css start */
+.news-details-title {
+  margin-bottom: 2rem;
+}
+.news-details-title h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #272727;
+  line-height: 140%;
+}
+
+.news-details-box h6 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+.news-details-box h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+  line-height: 140%;
+  margin-bottom: 2rem;
+}
+.news-details-box p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #272727;
+  line-height: 140%;
+  margin-bottom: 1.5rem;
+}
+.news-details-box img {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* news details css end */
 @media (min-width: 1980px) {
   .container {
     max-width: 1920px !important;
