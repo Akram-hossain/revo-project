@@ -102,8 +102,24 @@ $base4: v.$base4;
     }
 }
 
-.hero-txt-wrap {
-    position: relative;
+.vision-hero-section{
+    @include m.bgi('../images/vision-hero-bg.jpg'); 
+    .hero-ol {
+        padding: 10rem 0; 
+        background: rgb(5, 83, 148);
+        background: linear-gradient(90deg, rgba(5, 83, 148, 0.9) 0%, rgba(116, 180, 217, 0.9) 100%);
+    }
+}
+.services-hero-section{
+    @include m.bgi('../images/vision-hero-bg.jpg'); 
+    .hero-ol {
+        padding: 10rem 0; 
+        background: rgb(5, 83, 148);
+        background: linear-gradient(90deg, rgba(5, 83, 148, 0.9) 0%, rgba(116, 180, 217, 0.9) 100%);
+    }
+}
+
+.hero-txt-wrap { 
     text-align: end;
 
     h5 {
@@ -133,11 +149,23 @@ $base4: v.$base4;
 
     .scroll-down {
         margin-top: 2rem;
-        position: absolute;
-        transform: rotate(-90deg);
-
+        position: relative;
+        top: -1rem;
+        z-index: 99;
+        cursor: pointer; 
         a {
+            position: absolute;
+            left: 0;
+            transform: rotate(-90deg);
             @include m.para(0.9rem, 400, $light);
+            z-index: 99;
+        }
+        img{
+            position: absolute;
+            left: 0.2rem;
+            z-index: 99;
+            width: 2rem;
+            bottom: -7.5rem;
         }
     }
 }
@@ -194,6 +222,20 @@ $base4: v.$base4;
     }
 }
 
+.vision-about-section{
+    @include m.bgi('../images/vision-bg.png'); 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center right; 
+    margin-top: 6rem;
+}
+
+.mission-img{
+    img{
+        width: 80%;
+        border-radius: 1rem
+    }
+}
 
 .pickup-box {
     @include m.df;
@@ -246,34 +288,106 @@ $base4: v.$base4;
             color: $light;
         }
     }
+}
 
+.services-txt {
+    h5 {
+        @include m.para(2rem, 700, $light);
+        margin-bottom: 1.5rem;
+    }
+
+    h6 {
+        @include m.para(1.5rem, 400, $light);
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -10px;
+            width: 2.5rem;
+            height: 2px;
+            background-color: $light;
+        }
+    }
+
+    p {
+        @include m.para(1.5rem, 400, $light);
+        opacity: 0.7;
+    }
+}
+
+.services-main-section{
     .services-txt {
         h5 {
-            @include m.para(2rem, 700, $light);
-            margin-bottom: 1.5rem;
+           color: $primary
         }
 
         h6 {
-            @include m.para(1.5rem, 400, $light);
-            margin-bottom: 1.5rem;
-            position: relative;
-
-            &:before {
-                position: absolute;
-                content: "";
-                left: 0;
-                bottom: -10px;
-                width: 2.5rem;
-                height: 2px;
-                background-color: $light;
+            color: $primary;
+            &:before { 
+                background-color: $primary;
             }
         }
 
         p {
-            @include m.para(1.5rem, 400, $light);
+            color: $primary;
             opacity: 0.7;
         }
     }
+    .services-optional-title{ 
+        h4{
+            @include m.para(2rem, 700, $primary);
+        }
+    }
+}
+
+/* services text bg css */
+.services-bloock-bg{
+    position: relative;
+    .services-txt {
+        p{
+            color: $light;
+        }
+    }
+    &:before{
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 12%;
+        width: 50%;
+        height: 80%;
+        border-radius: 1rem 0 0 1rem;
+        background-color: $primary;
+        padding: 1rem;
+        z-index: -1;
+    }
+}
+
+.services-bloock-bg-2{
+    position: relative;
+    .services-txt {
+        p{
+            color: $light;
+        }
+    }
+    &:before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 20%;
+        width: 50%;
+        height: 60%;
+        border-radius: 0rem 1rem 1rem 0;
+        background-color: $primary;
+        padding: 1rem;
+        z-index: -1;
+    }
+}
+
+.custom-margin-top-serv{
+    margin-top: 7rem;
 }
 
 // feedback css start
@@ -293,7 +407,8 @@ $base4: v.$base4;
             @include m.box(1rem,1rem,$light);
             padding-right: 0;
             padding-left: 0.4rem;
-            max-width: 40%;
+            // max-width: 40%;
+            margin: 0 2rem;
             .media{
                 align-items: flex-start;
                 .avatar{
@@ -331,6 +446,24 @@ $base4: v.$base4;
                     }
                 }
             }
+        }
+
+    }
+}
+
+.services-feedback-section{
+    background-color: $light;
+    .feedback-head { 
+
+        h5 {
+            color: $primary;
+        }
+    }
+
+    .feedback-carousel {
+        .feedback-txt-box { 
+             background-color: $base3;
+          
         }
 
     }
@@ -390,6 +523,11 @@ $base4: v.$base4;
         a{
             margin-left: auto;
         }
+        &:hover{
+            p,h6,a{
+                color: $primary;
+            }
+        }
         
     }
     .brdr-btm{
@@ -408,10 +546,14 @@ $base4: v.$base4;
 }
 
 // get start css
-.get-start-box{
-    @include m.bgi('../images/get-bg');
+.get-start-bg{
+    @include m.bgi('../images/get-bg.png');
+    background-size: contain;
+    background-position: center left;
+}
+.get-start-box{ 
     padding: 4rem 3rem;
-    text-align: center;
+    text-align: center; 
     background: rgb(5, 83, 148);
     background: linear-gradient(90deg, rgba(5, 83, 148, 1) 0%, rgba(116, 180, 217, 1) 100%);
     border-radius: 1rem;
@@ -559,6 +701,39 @@ $base4: v.$base4;
     }
 }
 
+// services area
+.services-header-area{
+    margin-top: 2rem;
+    h4{
+        @include m.para(1.5rem, 700, $base4);
+        border-bottom: 2px solid $base4;
+        padding-bottom: 0.5rem;
+        span{
+            margin-left: 4rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.services-area-box{
+    width: 100%;
+    height: 6rem;
+    background-color: $base3;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1980px) {
+    .container {
+        max-width: 1920px!important; 
+    }
+  }
 
 
 

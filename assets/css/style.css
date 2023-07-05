@@ -1,4 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Noto+Sans:wght@300;400;500;600;700;800&display=swap");
+/*----------------------------------------------------------------------------------------------------------------------
+Project:	    Mairu
+Version:        1.0.0
+
+Primary color: #055394; 
+Secondary color: #74B4D9;  
+
+Primary Font Family:' Noto Sans', sans-serif;
+
+----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------
+[Table of contents]
+
+A. Basic Styling
+  -- Styling
+
+B. Helpers
+  -- Common Header
+  -- Common Button
+  -- Common Paragraph
+
+C. Components
+    --- # Home page # ---
+  -- Header
+  -- Hero
+  -- About 
+  -- Services 
+  -- Feedback 
+  -- Post 
+  -- News 
+  -- Get start 
+  -- Footer 
+  --- # Vision page # ---
+  -- Value
+  -- Team
+  -- Company Info
+  --- # Services page # ---
+
+D. Plugins Styles
+
+
+E. Utility Styles
+  -- Back to Top Button
+  -- Other 
+
+
+----------------------------------------------------------------------------------------------------------------------*/
+/***********************************************************************************************************************
+A. Basic Styling
+***********************************************************************************************************************/
 * {
   padding: 0;
   margin: 0;
@@ -196,8 +246,31 @@ body {
   background-position: bottom center;
 }
 
+.vision-hero-section {
+  background-image: url("../images/vision-hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.vision-hero-section .hero-ol {
+  padding: 10rem 0;
+  background: rgb(5, 83, 148);
+  background: linear-gradient(90deg, rgba(5, 83, 148, 0.9) 0%, rgba(116, 180, 217, 0.9) 100%);
+}
+
+.services-hero-section {
+  background-image: url("../images/vision-hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.services-hero-section .hero-ol {
+  padding: 10rem 0;
+  background: rgb(5, 83, 148);
+  background: linear-gradient(90deg, rgba(5, 83, 148, 0.9) 0%, rgba(116, 180, 217, 0.9) 100%);
+}
+
 .hero-txt-wrap {
-  position: relative;
   text-align: end;
 }
 .hero-txt-wrap h5 {
@@ -230,14 +303,27 @@ body {
 }
 .hero-txt-wrap .scroll-down {
   margin-top: 2rem;
-  position: absolute;
-  transform: rotate(-90deg);
+  position: relative;
+  top: -1rem;
+  z-index: 99;
+  cursor: pointer;
 }
 .hero-txt-wrap .scroll-down a {
+  position: absolute;
+  left: 0;
+  transform: rotate(-90deg);
   font-size: 0.9rem;
   font-weight: 400;
   color: #ffffff;
   line-height: 140%;
+  z-index: 99;
+}
+.hero-txt-wrap .scroll-down img {
+  position: absolute;
+  left: 0.2rem;
+  z-index: 99;
+  width: 2rem;
+  bottom: -7.5rem;
 }
 
 .custom-bg-one {
@@ -295,6 +381,22 @@ body {
   border-radius: 0.8rem;
   display: block;
   width: 100%;
+}
+
+.vision-about-section {
+  background-image: url("../images/vision-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center right;
+  margin-top: 6rem;
+}
+
+.mission-img img {
+  width: 80%;
+  border-radius: 1rem;
 }
 
 .pickup-box {
@@ -359,14 +461,15 @@ body {
 .services-section .common-heading p {
   color: #ffffff;
 }
-.services-section .services-txt h5 {
+
+.services-txt h5 {
   font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 140%;
   margin-bottom: 1.5rem;
 }
-.services-section .services-txt h6 {
+.services-txt h6 {
   font-size: 1.5rem;
   font-weight: 400;
   color: #ffffff;
@@ -374,7 +477,7 @@ body {
   margin-bottom: 1.5rem;
   position: relative;
 }
-.services-section .services-txt h6:before {
+.services-txt h6:before {
   position: absolute;
   content: "";
   left: 0;
@@ -383,12 +486,75 @@ body {
   height: 2px;
   background-color: #ffffff;
 }
-.services-section .services-txt p {
+.services-txt p {
   font-size: 1.5rem;
   font-weight: 400;
   color: #ffffff;
   line-height: 140%;
   opacity: 0.7;
+}
+
+.services-main-section .services-txt h5 {
+  color: #055394;
+}
+.services-main-section .services-txt h6 {
+  color: #055394;
+}
+.services-main-section .services-txt h6:before {
+  background-color: #055394;
+}
+.services-main-section .services-txt p {
+  color: #055394;
+  opacity: 0.7;
+}
+.services-main-section .services-optional-title h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #055394;
+  line-height: 140%;
+}
+
+/* services text bg css */
+.services-bloock-bg {
+  position: relative;
+}
+.services-bloock-bg .services-txt p {
+  color: #ffffff;
+}
+.services-bloock-bg:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 12%;
+  width: 50%;
+  height: 80%;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #055394;
+  padding: 1rem;
+  z-index: -1;
+}
+
+.services-bloock-bg-2 {
+  position: relative;
+}
+.services-bloock-bg-2 .services-txt p {
+  color: #ffffff;
+}
+.services-bloock-bg-2:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 20%;
+  width: 50%;
+  height: 60%;
+  border-radius: 0rem 1rem 1rem 0;
+  background-color: #055394;
+  padding: 1rem;
+  z-index: -1;
+}
+
+.custom-margin-top-serv {
+  margin-top: 7rem;
 }
 
 .feedback-section {
@@ -409,7 +575,7 @@ body {
   background-color: #ffffff;
   padding-right: 0;
   padding-left: 0.4rem;
-  max-width: 40%;
+  margin: 0 2rem;
 }
 .feedback-section .feedback-carousel .feedback-txt-box .media {
   align-items: flex-start;
@@ -457,6 +623,16 @@ body {
   line-height: 140%;
   opacity: 0.7;
   margin-top: 1rem;
+}
+
+.services-feedback-section {
+  background-color: #ffffff;
+}
+.services-feedback-section .feedback-head h5 {
+  color: #055394;
+}
+.services-feedback-section .feedback-carousel .feedback-txt-box {
+  background-color: #F3F3F3;
 }
 
 .post-section {
@@ -522,6 +698,9 @@ body {
 .news-section .news-txt-box a {
   margin-left: auto;
 }
+.news-section .news-txt-box:hover p, .news-section .news-txt-box:hover h6, .news-section .news-txt-box:hover a {
+  color: #055394;
+}
 .news-section .brdr-btm {
   border-bottom: 2px solid #272727;
   padding-bottom: 0.5rem;
@@ -536,11 +715,16 @@ body {
   padding-left: 1rem;
 }
 
-.get-start-box {
-  background-image: url("../images/get-bg");
+.get-start-bg {
+  background-image: url("../images/get-bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+}
+
+.get-start-box {
   padding: 4rem 3rem;
   text-align: center;
   background: rgb(5, 83, 148);
@@ -720,4 +904,33 @@ body {
 }
 .company-section .company-table-list .d-flex:last-child {
   border-bottom: 1px solid #FEFEFE;
+}
+
+.services-header-area {
+  margin-top: 2rem;
+}
+.services-header-area h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+  line-height: 140%;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 0.5rem;
+}
+.services-header-area h4 span {
+  margin-left: 4rem;
+  font-weight: 400;
+}
+
+.services-area-box {
+  width: 100%;
+  height: 6rem;
+  background-color: #F3F3F3;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 1980px) {
+  .container {
+    max-width: 1920px !important;
+  }
 }
