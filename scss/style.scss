@@ -97,8 +97,7 @@ $base4: v.$base4;
     @include m.bgi('../images/hero-bg.png');
     background-position: bottom center;
     margin-top: 85px;
-    position: relative;
-    z-index: 99;
+  
     .hero-ol {
         padding: 8rem 0;
         @include m.bgi('../images/hero-ol-img.svg');
@@ -130,8 +129,8 @@ $base4: v.$base4;
 
 .hero-txt-wrap {
     text-align: end;
-    // position: relative;
-    // z-index: 99;
+    position: relative;
+    z-index: 99;
     h5 {
         @include m.para(2rem, 700, $light);
         font-family: 'Zen Kaku Gothic New', sans-serif;

@@ -325,6 +325,10 @@
   .get-bg {
     padding: 0;
   }
+  .hero-txt-wrap .hero-bttn {
+    bottom: inherit;
+    top: 14rem;
+  }
 }
 @media (min-width: 575px) and (max-width: 767px) {
   .header-section .navbar-nav .nav-item .nav-link {

@@ -243,8 +243,6 @@ body {
   background-repeat: no-repeat;
   background-position: bottom center;
   margin-top: 85px;
-  position: relative;
-  z-index: 99;
 }
 .hero-section .hero-ol {
   padding: 8rem 0;
@@ -283,6 +281,8 @@ body {
 
 .hero-txt-wrap {
   text-align: end;
+  position: relative;
+  z-index: 99;
 }
 .hero-txt-wrap h5 {
   font-size: 2rem;
