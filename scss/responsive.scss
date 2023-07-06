@@ -1314,4 +1314,57 @@
 }
 
 // large device 
-@include q.responsive(large) {}
+@include q.responsive(large) {
+    // font-decrease
+    .common-heading p,
+    .services-txt h5,
+    .post-section .post-box .txt h4,
+    .about-txt .para h6,
+    .company-section .company-title h5,
+    .team-person-box .txt h6,
+    .about-txt h5,
+    .hero-txt-wrap h5{
+        font-size: 1.5rem;
+    }
+    .get-start-box h3,
+    .hero-txt-wrap h3{
+        font-size: 3rem;
+    }
+    .hero-txt-wrap h1{
+        font-size: 4.5rem;
+    }
+    .pa-y4{
+        padding: 4rem 0;
+    }
+    .company-section .company-title h2,
+    .common-heading h2,
+    .about-txt h2{
+        font-size: 4rem;
+    }
+    .team-person-box .txt h5,
+    .services-header-area h4,
+    .footer-section .ftr-menu ul li a,
+    .company-section .company-table-list .d-flex h5,
+    .company-section .company-table-list .d-flex h6,
+    .get-start-box h6,
+    .contact-form-box .form-group label,
+    .feedback-section .feedback-carousel .feedback-txt-box .media .media-body p,
+    .services-txt p,
+    .about-txt .para p{
+        font-size: 1.2rem;
+    }
+    .vision-about-section{
+        background-size: 39%;
+    }
+    .company-section{
+        padding-bottom: 16rem;
+    }
+    .contact-form-box .form-group .form-control{
+        font-size: 1rem;
+    }
+}
+
+// extra large device 
+@include q.responsive(extralarge) {
+    
+}
