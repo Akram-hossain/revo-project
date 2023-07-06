@@ -243,6 +243,8 @@ body {
   background-repeat: no-repeat;
   background-position: bottom center;
   margin-top: 85px;
+  position: relative;
+  z-index: 99;
 }
 .hero-section .hero-ol {
   padding: 8rem 0;
@@ -314,7 +316,7 @@ body {
 .hero-txt-wrap .scroll-down {
   margin-top: 2rem;
   position: relative;
-  top: -1rem;
+  top: -3rem;
   z-index: 99;
   cursor: pointer;
 }
@@ -337,6 +339,15 @@ body {
 }
 
 .custom-bg-one {
+  position: relative;
+}
+.custom-bg-one:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   background-image: url("../images/hero-bottom-bg.png");
   background-size: cover;
   background-position: center center;
@@ -345,6 +356,10 @@ body {
   background-position: top center;
 }
 
+.about-txt {
+  position: relative;
+  z-index: 99;
+}
 .about-txt h2 {
   font-size: 5rem;
   font-weight: 700;
@@ -414,6 +429,8 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 5rem 0 2rem;
+  position: relative;
+  z-index: 99;
 }
 .pickup-box span {
   display: inline-block;
@@ -671,6 +688,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  align-items: flex-end;
   padding: 1rem;
 }
 .post-section .post-box .txt h4 {
@@ -746,17 +764,17 @@ body {
   padding-left: 1rem;
 }
 
-.get-start-bg {
+.get-bg {
   background-image: url("../images/get-bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;
+  padding: 4rem 3rem;
 }
 
 .get-start-box {
-  padding: 4rem 3rem;
   text-align: center;
   background: rgb(5, 83, 148);
   background: linear-gradient(90deg, rgb(5, 83, 148) 0%, rgb(116, 180, 217) 100%);

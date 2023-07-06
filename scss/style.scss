@@ -97,6 +97,8 @@ $base4: v.$base4;
     @include m.bgi('../images/hero-bg.png');
     background-position: bottom center;
     margin-top: 85px;
+    position: relative;
+    z-index: 99;
     .hero-ol {
         padding: 8rem 0;
         @include m.bgi('../images/hero-ol-img.svg');
@@ -107,6 +109,7 @@ $base4: v.$base4;
 .vision-hero-section {
     @include m.bgi('../images/vision-hero-bg.jpg');
     margin-top: 85px;
+
     .hero-ol {
         padding: 10rem 0;
         background: rgb(5, 83, 148);
@@ -117,6 +120,7 @@ $base4: v.$base4;
 .services-hero-section {
     @include m.bgi('../images/vision-hero-bg.jpg');
     margin-top: 85px;
+
     .hero-ol {
         padding: 10rem 0;
         background: rgb(5, 83, 148);
@@ -126,7 +130,8 @@ $base4: v.$base4;
 
 .hero-txt-wrap {
     text-align: end;
-
+    // position: relative;
+    // z-index: 99;
     h5 {
         @include m.para(2rem, 700, $light);
         font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -156,7 +161,7 @@ $base4: v.$base4;
     .scroll-down {
         margin-top: 2rem;
         position: relative;
-        top: -1rem;
+        top: -3rem;
         z-index: 99;
         cursor: pointer;
 
@@ -180,14 +185,26 @@ $base4: v.$base4;
 
 // custom bg
 .custom-bg-one {
-    @include m.bgi('../images/hero-bottom-bg.png');
-    background-size: 100%;
-    background-position: top center;
+
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        @include m.bgi('../images/hero-bottom-bg.png');
+        background-size: 100%;
+        background-position: top center; 
+    }
+
 }
 
 .about-txt {
-   
-
+    position: relative;
+    z-index: 99;
     h2 {
         @include m.para(5rem, 700, $primary);
     }
@@ -251,7 +268,8 @@ $base4: v.$base4;
 .pickup-box {
     @include m.df;
     padding: 5rem 0 2rem;
-
+    position: relative;
+    z-index: 99;
     span {
         display: inline-block;
         @include m.para(2rem, 700, $primary);
@@ -314,6 +332,7 @@ $base4: v.$base4;
         margin-bottom: 1.5rem;
         position: relative;
         font-family: 'Zen Kaku Gothic New', sans-serif;
+
         &:before {
             position: absolute;
             content: "";
@@ -415,6 +434,7 @@ $base4: v.$base4;
 .feedback-section {
     background-color: $primary;
     font-family: 'Zen Kaku Gothic New', sans-serif;
+
     .feedback-head {
         margin-bottom: 4rem;
 
@@ -520,6 +540,7 @@ $base4: v.$base4;
             height: 100%;
             @include m.df(space-between);
             flex-direction: column;
+            align-items: flex-end;
             padding: 1rem;
 
             h4 {
@@ -545,14 +566,17 @@ $base4: v.$base4;
         border-top: 2px solid $base2;
         padding-top: 0.5rem;
         margin-top: 0.5rem;
-        .media{
+
+        .media {
             align-items: center;
             width: 100%;
-            .media-body{
+
+            .media-body {
                 display: flex;
                 align-items: center;
             }
-            a{
+
+            a {
                 margin-left: auto;
             }
         }
@@ -564,7 +588,7 @@ $base4: v.$base4;
 
         p {
             @include m.para(1.15rem, 400, $base2);
-            margin: 0 2rem; 
+            margin: 0 2rem;
         }
 
         h6 {
@@ -606,19 +630,21 @@ $base4: v.$base4;
 }
 
 // get start css
-.get-start-bg {
+.get-bg {
     @include m.bgi('../images/get-bg.png');
     background-size: contain;
     background-position: center left;
+    padding: 4rem 3rem;
 }
 
 .get-start-box {
-    padding: 4rem 3rem;
+
     text-align: center;
     background: rgb(5, 83, 148);
     background: linear-gradient(90deg, rgba(5, 83, 148, 1) 0%, rgba(116, 180, 217, 1) 100%);
     border-radius: 1rem;
     font-family: 'Zen Kaku Gothic New', sans-serif;
+
     h3 {
         @include m.para(3.5rem, 700, $light);
     }
@@ -815,9 +841,10 @@ $base4: v.$base4;
 }
 
 /* news css start */
-.news-details-sec{
+.news-details-sec {
     margin-top: 66px;
 }
+
 .news-main-section {
     .news-post-box {
         margin-top: 4rem;
