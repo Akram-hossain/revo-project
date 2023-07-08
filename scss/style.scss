@@ -53,7 +53,7 @@ $base4: v.$base4;
 }
 
 .pa-y4 {
-    padding: 6rem 0;
+    padding: 8rem 0;
 }
 
 // regular css @e
@@ -131,21 +131,25 @@ $base4: v.$base4;
     text-align: end;
     position: relative;
     z-index: 99;
+    padding-top: 2rem;
     h5 {
-        @include m.para(2rem, 700, $light);
+        @include m.para(2rem, 500, $light);
         font-family: 'Zen Kaku Gothic New', sans-serif;
+        padding-bottom: 1.5rem;
     }
 
     h3 {
         @include m.para(4rem, 600, $light);
+        line-height: 100%
     }
 
     h1 {
         @include m.para(5rem, 700, $light);
+        line-height: 100%
     }
 
     .hero-bttn {
-        margin-top: 4rem;
+        margin-top: 6rem;
         margin-bottom: 2rem;
 
         a {
@@ -214,20 +218,20 @@ $base4: v.$base4;
     }
 
     .para {
-        margin-left: 2rem;
+        margin-left: 5rem;
         margin-top: 3rem;
-        margin-right: 1rem;
+        margin-right: 4rem;
 
         h6 {
-            @include m.para(2rem, 700, $base2);
-            margin-bottom: 2.5rem;
+            @include m.para(2rem, 600, $base2);
+            margin-bottom: 1.3rem;
             font-family: 'Zen Kaku Gothic New', sans-serif;
         }
 
         p {
             @include m.para(1.5rem, 500, $base2);
             margin-bottom: 4rem;
-            opacity: 0.7;
+            opacity: 0.7; 
             font-family: 'Zen Kaku Gothic New', sans-serif;
         }
 
@@ -262,6 +266,10 @@ $base4: v.$base4;
         width: 80%;
         border-radius: 1rem
     }
+}
+
+.pickup-titl-txt{
+    padding: 6rem 0;
 }
 
 .pickup-box {
@@ -309,7 +317,8 @@ $base4: v.$base4;
 .services-section {
     @include m.bgi('../images/sevices-bg.png');
     background-color: #055394;
-
+    background-size: contain;
+    background-position: top center;
     .common-heading {
 
         h2,
@@ -320,6 +329,8 @@ $base4: v.$base4;
 }
 
 .services-txt {
+    margin-left: 6rem;
+    margin-right: 3rem;
     h5 {
         @include m.para(2rem, 700, $light);
         margin-bottom: 1.5rem;
@@ -458,9 +469,10 @@ $base4: v.$base4;
                     margin-right: 1rem;
 
                     img {
-                        width: 9rem;
-                        height: 9rem;
+                        width: 7rem;
+                        height: 7rem;
                         margin: 0 auto;
+                        object-fit: cover;
                         display: block;
                     }
 
@@ -581,7 +593,7 @@ $base4: v.$base4;
         }
 
         img {
-            width: 10rem;
+            width: 12rem;
             border-radius: 0.675rem;
         }
 
@@ -591,7 +603,7 @@ $base4: v.$base4;
         }
 
         h6 {
-            @include m.para(1.5rem, 700, $base2);
+            @include m.para(1.5rem, 600, $base2);
             font-family: 'Zen Kaku Gothic New', sans-serif;
         }
 
@@ -635,6 +647,9 @@ $base4: v.$base4;
     background-position: center left;
     padding: 4rem 3rem;
 }
+.get-start-section {
+    padding-top: 4rem;
+}
 
 .get-start-box {
 
@@ -670,12 +685,16 @@ $base4: v.$base4;
 
     .ftr-logo {
         p {
-            @include m.para(1.15rem, 700, $primary);
+            @include m.para(1.15rem, 600, $primary);
             font-family: 'Zen Kaku Gothic New', sans-serif;
+            margin-bottom: 0.5rem;
         }
 
         a {
             display: block;
+            img{
+                width: 18rem;
+            }
         }
     }
 
@@ -686,8 +705,8 @@ $base4: v.$base4;
             li {
                 a {
                     display: block;
-                    @include m.para(1.5rem, 700, $base2);
-                    margin-left: 1rem;
+                    @include m.para(1.5rem, 600, $base2);
+                    margin-left: 2rem;
                     font-family: 'Zen Kaku Gothic New', sans-serif;
                 }
             }
@@ -697,7 +716,7 @@ $base4: v.$base4;
     .ftr-copy {
         text-align: center;
         padding-bottom: 2rem;
-        padding-top: 4rem;
+        padding-top: 6rem;
 
         p {
             @include m.para(1.15rem, 500, $base2);
@@ -876,7 +895,7 @@ $base4: v.$base4;
 /* contact css start */
 .contact-hero-section {
     @include m.bgi('../images/contact-hero-bg.png');
-    padding: 10rem 0;
+    padding: 15rem 0;
 }
 
 .contact-form-box {
@@ -886,8 +905,8 @@ $base4: v.$base4;
 
     .custom-brdr {
         border-top: 1.5px solid $base4;
-        padding-top: 1rem;
-        margin-top: 1rem;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
         align-items: center;
     }
 
@@ -939,6 +958,7 @@ $base4: v.$base4;
     h4 {
         @include m.para(2rem, 700, $base4);
         margin-bottom: 2rem;
+        line-height: 100%
     }
 
     p {
@@ -950,6 +970,7 @@ $base4: v.$base4;
         display: block;
         width: 100%;
         margin-bottom: 2rem;
+        border-radius: 1rem;
     }
 }
 

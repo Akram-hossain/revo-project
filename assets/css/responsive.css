@@ -329,6 +329,13 @@
     bottom: inherit;
     top: 14rem;
   }
+  .services-txt {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-section .ftr-menu ul li a {
+    margin-left: 0;
+  }
 }
 @media (min-width: 575px) and (max-width: 767px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -623,6 +630,13 @@
   .get-bg {
     padding: 0;
   }
+  .services-txt {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-section .ftr-menu ul li a {
+    margin-left: 0;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -833,6 +847,23 @@
   .about-txt .text-md-end {
     margin-top: 1rem;
   }
+  .services-txt {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-section .ftr-menu ul li a {
+    margin-left: 0;
+    margin: 0 1rem;
+  }
+  .post-section .post-box .txt h4 {
+    font-size: 1.2rem;
+  }
+  .default-bttn {
+    font-size: 0.9rem;
+  }
+  .default-bttn i {
+    padding-left: 0.5rem;
+  }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -935,6 +966,13 @@
   .company-section {
     padding-bottom: 16rem;
   }
+  .services-txt {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+  .post-section .post-box .txt h4 {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .header-section .navbar-nav .nav-item .nav-link {
@@ -988,22 +1026,19 @@
   .team-person-box .txt h6,
   .about-txt h5,
   .hero-txt-wrap h5 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .get-start-box h3,
   .hero-txt-wrap h3 {
     font-size: 3rem;
   }
   .hero-txt-wrap h1 {
-    font-size: 4.5rem;
-  }
-  .pa-y4 {
-    padding: 4rem 0;
+    font-size: 5.6rem;
   }
   .company-section .company-title h2,
   .common-heading h2,
   .about-txt h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .team-person-box .txt h5,
   .services-header-area h4,
@@ -1015,7 +1050,7 @@
   .feedback-section .feedback-carousel .feedback-txt-box .media .media-body p,
   .services-txt p,
   .about-txt .para p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .vision-about-section {
     background-size: 39%;
@@ -1025,5 +1060,10 @@
   }
   .contact-form-box .form-group .form-control {
     font-size: 1rem;
+  }
+  .feedback-section .feedback-carousel .feedback-txt-box .media .media-body h5,
+  .news-section .news-txt-box h6,
+  .pickup-box div h6 {
+    font-size: 1.2rem;
   }
 }

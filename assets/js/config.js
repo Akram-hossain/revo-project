@@ -9,9 +9,23 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     infinite: true,
     centerMode: true,
-    centerPadding: '430px',
+    centerPadding: '720px',
     dots: false,
     responsive: [
+      {
+        breakpoint: 2199,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '500px',
+        }
+      },
+      {
+        breakpoint: 1899,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '450px',
+        }
+      },
       {
         breakpoint: 1399,
         settings: {
